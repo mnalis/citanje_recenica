@@ -8,19 +8,21 @@ use feature 'say';
 use autodie qw(:all);
 use utf8;
 
+use CGI;
+
 use scigen;
 
 my $DEBUG = 1;
 my $DB_WORDS = 'hrvatski.in';
 my $ONLY_UPPERCASE = 0;
-my $LETTERS = 'manieouljr';	# by default accept all letters - FIXME - "\w"
+my $LETTERS = 'abcćčdđefghijklmnoprsštuvzž';	# by default accept all letters - FIXME - "\w"
 
 $ENV{PATH} = '/bin:/usr/bin';
 
-my $hrv_dat = {};
-my $hrv_RE = undef;
 
 # reads the database
+my $hrv_dat = {};
+my $hrv_RE = undef;
 sub read_db()
 {
 	open my $hrv_fh, '<:encoding(UTF-8)', $DB_WORDS;
@@ -35,11 +37,32 @@ sub fix_case($)
 	return $ONLY_UPPERCASE ? uc ($s) : ucfirst ($s);
 }
 
+# validates CGI param
+my $q;
+sub validate_oknull($$)
+{
+	my ($param, $regex) = @_;
+	my $value = $q->param($param);
+	if (not defined $value) { return undef; }
+	if ($value =~ /^($regex)$/) { return $1; }
+	die "invalid value for $param: $value does not match $regex";
+}
+
 ###
 ### here goes the main
 ###
 
 binmode STDOUT, ':utf8';
+
+$q  = new CGI;
+print $q->header (
+	-charset    => 'utf-8',
+	);
+
+$LETTERS = validate_oknull('letters', "[$LETTERS]{1,27}") || $LETTERS;
+$ONLY_UPPERCASE = validate_oknull('upcase', '[01]');
+$DEBUG > 1 && say "Allowed letters=$LETTERS (" . length($LETTERS) . "), upcase=$ONLY_UPPERCASE";
+
 read_db();	# initialize the DB
 
 if ($DEBUG > 7) {
@@ -57,7 +80,7 @@ my $ok_slova = qr/^[$LETTERS \.!]+$/i;
 while ($count-- > 0 and $recenica !~ /$ok_slova/) {
 	$recenica = scigen::generate ($hrv_dat, $start_rule, $hrv_RE, 0, 1);
 	chomp $recenica;
-	$DEBUG > 1 && say "Pokusavam recenicu '$recenica' u setu slova '$ok_slova'";
+	$DEBUG > 3 && say "Pokusavam recenicu '$recenica' u setu slova '$ok_slova'";
 }
 
 if ($count > 0) {
