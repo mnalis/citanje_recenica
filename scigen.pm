@@ -20,7 +20,6 @@ package scigen;
 use strict;
 use IO::File;
 use Data::Dumper;
-use Autoformat;
 use vars qw($SCIGEND_PORT);
 
 #### daemon settings ####
@@ -177,24 +176,18 @@ sub pretty_print {
 	$line =~ s/(\b)(a)\s+([aeiou])/$1$2n $3/gi;
 
 	if( $line =~ /\\section(\*?){(.*)}/ ) {
-	    $newline = "\\section${1}{" . 
-	      Autoformat::autoformat( $2, { case => 'highlight', 
-					    squeeze => 0 } );
+	    $newline = "\\section${1}{" . $2;
 	    chomp $newline;
 	    chomp $newline;
 	    $newline .= "}";
 	} elsif( $line =~ /(\\subsection){(.*)}/ or 
 		 $line =~ /(\\slideheading){(.*)}/ ) {
-	    $newline = $1 . "{" . 
-	      Autoformat::autoformat( $2, { case => 'highlight', 
-					    squeeze => 0 } );
+	    $newline = $1 . "{" . $2;
 	    chomp $newline;
 	    chomp $newline;
 	    $newline .= "}";
 	} elsif( $line =~ /\\title{(.*)}/ ) {
-	    $newline = "\\title{" . 
-	      Autoformat::autoformat( $1, { case => 'highlight', 
-					    squeeze => 0  } );
+	    $newline = "\\title{" . $1;
 	    chomp $newline;
 	    chomp $newline;
 	    $newline .= "}";
@@ -203,18 +196,12 @@ sub pretty_print {
 	    my $curr = $2;
 	    # place brackets around any words containing capital letters
 	    $curr =~ s/\b([^\s]*[A-Z]+[^\s\:]*)\b/\{$1\}/g;
-	    $newline = "$label = {" . 
-	      Autoformat::autoformat( $curr, { case => 'highlight', 
-					       squeeze => 0  } );
+	    $newline = "$label = {" . $curr;
 	    chomp $newline;
 	    chomp $newline;
 	    $newline .= "},";
 	} elsif( $line =~ /\S/ ) {
-	    $newline = 
-	      Autoformat::autoformat( $line, { case => 'sentence', 
-					       squeeze => 0, 
-					       break => break_latex(),
-					       ignore => qr/^\\/ } );
+	    $newline = $line;
 	}
 
 	$newline =~ s/\\Em/\\em/g;
