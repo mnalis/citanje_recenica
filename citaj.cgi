@@ -10,9 +10,9 @@ use utf8;
 
 use scigen;
 
-my $DEBUG = 9;
+my $DEBUG = 5;
 my $DB_WORDS = 'hrvatski.in';
-my $ONLY_UPPERCASE = 1;
+my $ONLY_UPPERCASE = 0;
 my $LETTERS = 'manieouljr';	# by default accept all letters - FIXME - "\w"
 
 $ENV{PATH} = '/bin:/usr/bin';
