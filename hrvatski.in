@@ -1,0 +1,204 @@
+# startamo sa "RECENICA"
+RECENICA IMENICA_GLAGOL OBJEKT
+
+# Hrv. padeži na https://hr.wikipedia.org/wiki/Pade%C5%BE :
+#    nominativ - tko?, što? - (Tko je trčao?)
+#    akuzativ - koga?, što? - (vidim; Koga (ili što) starac gleda?)
+#    genitiv - koga?, čega? - (nema; Koga (ili čega) nema?)
+#    dativ - komu?, čemu? - (prilazim; Komu prilazi?)
+#    lokativ - o kom?, o čem?[2] (u kom?, u čem?)
+#    instrumental - (s) kim?, (s) čim?
+#    vokativ - oj!, ej! - (dozivanje)
+
+IMENICA_GLAGOL IMENICA_GLAGOL1
+IMENICA_GLAGOL IMENICA_GLAGOL2
+
+IMENICA_GLAGOL1 IMENICA1N GLAGOL1
+IMENICA_GLAGOL2 IMENICA2N GLAGOL2
+
+# Format: IMENICA1AM - Imenica jednine (1) u Akuzativu (A) "koga? sto?" Muskog roda (M) -- npr. "djeda"
+OBJEKT IMENICA1AM
+OBJEKT IMENICA1AZ
+OBJEKT IMENICA1AS
+
+OBJEKT PRIDJEV1AM IMENICA1AM
+OBJEKT PRIDJEV1AZ IMENICA1AZ
+OBJEKT PRIDJEV1AS IMENICA1AS
+
+OBJEKT IMENICA2A_E
+OBJEKT IMENICA2A_U
+
+OBJEKT PRIDJEV2A_E IMENICA2A_E
+OBJEKT PRIDJEV2A_U IMENICA2A_U
+
+
+
+# subjekti radnje
+
+IMENICA1N IME1N
+IMENICA1N OSOBA1N
+IMENICA1N STVAR1N
+
+OSOBA1N mama
+OSOBA1N majka
+OSOBA1N tata
+OSOBA1N otac
+OSOBA1N baka
+OSOBA1N djed
+OSOBA1N kraljica
+OSOBA1N kralj
+OSOBA1N princ
+
+STVAR1N bubamara
+STVAR1N ptica
+STVAR1N maca
+STVAR1N zmija
+
+IME1N Marin
+IME1N Ksenija
+IME1N Matija
+IME1N Ivan
+IME1N Ivana
+IME1N Marko
+IME1N Pero
+IME1N Ivica
+IME1N Perica
+IME1N Marica
+IME1N Ana
+IME1N Marta
+IME1N Tomo
+IME1N Tonka
+IME1N Matko
+IME1N Josip
+IME1N Paula
+IME1N Stjepan
+IME1N Paško
+IME1N Pavao
+IME1N Martin
+IME1N Marta
+IME1N Roko
+IME1N Petar
+IME1N Marija
+IME1N Boris
+IME1N Borna
+IME1N Branimir
+IME1N Mislav
+
+IMENICA2N mame
+IMENICA2N djeca
+IMENICA2N tete
+IMENICA2N bake
+IMENICA2N djedovi
+IMENICA2N tate
+
+
+
+# predikati
+
+GLAGOL1 ima
+GLAGOL1 nema
+GLAGOL1 voli
+GLAGOL1 ne voli
+GLAGOL1 želi
+GLAGOL1 ne želi
+
+GLAGOL2 imaju
+GLAGOL2 nemaju
+GLAGOL2 vole
+GLAGOL2 ne vole
+GLAGOL2 žele
+
+
+
+# Objekti radnje: Akuzativ - koga ili što vidim? Muski, Zenski, Srednji rod 
+
+PRIDJEV1AZ lijepu
+PRIDJEV1AZ visoku
+PRIDJEV1AZ nisku
+PRIDJEV1AZ plavu
+PRIDJEV1AZ crnu
+
+IMENICA1AZ mamu
+IMENICA1AZ majku
+IMENICA1AZ baku
+IMENICA1AZ Kseniju
+IMENICA1AZ Ivanu
+IMENICA1AZ Nenu
+IMENICA1AZ loptu
+IMENICA1AZ kuću
+IMENICA1AZ jabuku
+IMENICA1AZ pernicu
+IMENICA1AZ olovku
+IMENICA1AZ pticu
+
+
+
+PRIDJEV1AM visokog
+PRIDJEV1AM niskog
+PRIDJEV1AM jakog
+PRIDJEV1AM snažnog
+PRIDJEV1AM prljavog
+PRIDJEV1AM čistog
+PRIDJEV1AM plavog
+
+IMENICA1AM psa
+IMENICA1AM djeda
+IMENICA1AM Marina
+IMENICA1AM Matiju
+IMENICA1AM Marka
+IMENICA1AM Ivana
+
+
+
+PRIDJEV1AS čist
+PRIDJEV1AS prljav
+PRIDJEV1AS dubok
+PRIDJEV1AS mekan
+PRIDJEV1AS potrgan
+PRIDJEV1AS pospremljen
+
+IMENICA1AS tanjur
+IMENICA1AS krevet
+
+
+
+PRIDJEV2A_E lijepe
+PRIDJEV2A_E zelene
+PRIDJEV2A_E dobre
+PRIDJEV2A_E jake
+PRIDJEV2A_E visoke
+PRIDJEV2A_E plave
+PRIDJEV2A_E tvrde
+PRIDJEV2A_E mekane 
+
+IMENICA2A_E majke
+IMENICA2A_E igračke
+IMENICA2A_E lopte
+IMENICA2A_E hrčke
+IMENICA2A_E pse
+IMENICA2A_E mačke
+IMENICA2A_E ptice
+IMENICA2A_E djedove
+IMENICA2A_E bake
+IMENICA2A_E tepihe
+IMENICA2A_E cipele
+IMENICA2A_E miševe
+IMENICA2A_E stepenice
+
+
+
+PRIDJEV2A_U dobru
+PRIDJEV2A_U zločestu
+PRIDJEV2A_U malu
+PRIDJEV2A_U veliku
+PRIDJEV2A_U plačljivu
+PRIDJEV2A_U žutu
+PRIDJEV2A_U ljubičastu
+
+IMENICA2A_U djecu
+IMENICA2A_U kuću
+IMENICA2A_U štalu
+IMENICA2A_U kravu
+IMENICA2A_U fotelju
+IMENICA2A_U stolicu
+

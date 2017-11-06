@@ -1,8 +1,0 @@
-s1 g1 o1
-s1 g1 o2
-s1 g1 p1 o1
-s1 g1 p2 o2
-s2 g2 o1
-s2 g2 o2
-s2 g2 p1 o1
-s2 g2 p2 o2

@@ -16,33 +16,21 @@
 #    along with SCIgen; if not, write to the Free Software
 #    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+use strict;
+use autodie qw(:all);
 
 use lib '.';
 
-use strict;
 use scigen;
 use IO::File;
 
-my $tex_file = "test.tex";
+my $hrv_dat = {};
+my $hrv_RE = undef;
 
-my $name_dat = {};
-my $name_RE = undef;
-my $tex_dat = {};
-my $tex_RE = undef;
+my $hrv_fh = new IO::File ("<hrvatski.in");
+my $start_rule = "RECENICA";
 
-my $sysname = 'BurekOS';
+scigen::read_rules ($hrv_fh, $hrv_dat, \$hrv_RE, 0);
+my $recenica = scigen::generate ($hrv_dat, $start_rule, $hrv_RE, 0, 1);
 
-my $tex_fh = new IO::File ("<scirules.in");
-my $start_rule = "SCIPAPER_LATEX";
-my @a = ($sysname);
-$tex_dat->{"SYSNAME"} = \@a;
-
-my $s = "";
-my @b = ($s);
-$tex_dat->{"SCIAUTHORS"} = \@b;
-
-scigen::read_rules ($tex_fh, $tex_dat, \$tex_RE, 0);
-my $tex = scigen::generate ($tex_dat, $start_rule, $tex_RE, 0, 1);
-open( TEX, ">$tex_file" ) or die( "Couldn't open $tex_file for writing" );
-print TEX $tex;
-close( TEX );
+print $recenica;

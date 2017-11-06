@@ -1,4 +1,4 @@
-- odabir naučenih slova
+- odabir naučenih slova - scigen kako? $fd_in da je output od "grep xxxx" ?
 - samo velika slova ili velika + mala
 - UTF8
 - kombinacije riječi preferences  (da ne ispadne "ne voli mamu" ili "ima ima zelenu baku")
