@@ -142,35 +142,7 @@ sub pretty_print {
 	$line =~ s/(\s+)([\.\,\?\;\:])/$2/g;
 	$line =~ s/(\b)(a)\s+([aeiou])/$1$2n $3/gi;
 
-	if( $line =~ /\\section(\*?){(.*)}/ ) {
-	    $newline = "\\section${1}{" . $2;
-	    chomp $newline;
-	    chomp $newline;
-	    $newline .= "}";
-	} elsif( $line =~ /(\\subsection){(.*)}/ or 
-		 $line =~ /(\\slideheading){(.*)}/ ) {
-	    $newline = $1 . "{" . $2;
-	    chomp $newline;
-	    chomp $newline;
-	    $newline .= "}";
-	} elsif( $line =~ /\\title{(.*)}/ ) {
-	    $newline = "\\title{" . $1;
-	    chomp $newline;
-	    chomp $newline;
-	    $newline .= "}";
-	} elsif( $line =~ /(.*) = {(.*)}\,/ ) {
-	    my $label = $1;
-	    my $curr = $2;
-	    # place brackets around any words containing capital letters
-	    $curr =~ s/\b([^\s]*[A-Z]+[^\s\:]*)\b/\{$1\}/g;
-	    $newline = "$label = {" . $curr;
-	    chomp $newline;
-	    chomp $newline;
-	    $newline .= "},";
-	} elsif( $line =~ /\S/ ) {
-	    $newline = $line;
-	}
-
+	$newline = $line;
 	$newline =~ s/\\Em/\\em/g;
 
 	if( $newline !~ /\n$/ ) {
