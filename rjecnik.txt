@@ -61,10 +61,12 @@ o1 pernicu
 o1 olovku
 o1 krevet
 o1 psa
-o2 pticu
+o1 pticu
 
 o2 igračke
 o2 lopte
 o2 hrčke
 o2 pse
 o2 mačke
+o2 ptice
+

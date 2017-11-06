@@ -1,13 +1,13 @@
 #!/usr/bin/perl -T
 # by Matija Nalis <mnalis-perl@voyager.hr> GPLv3+ started 20171106
-# generira jednostavne recenice za citanje za prvasice
+# generira jednostavne rečenice za čitanje (za prvašiće - polaznike prvog razreda osnovne škole)
 
 use strict;
 use feature 'say';
 use autodie qw(:all);
 
 my $DB = 'rjecnik.txt';
-my $DEBUG = 9;
+my $DEBUG = 0;
 
 $ENV{PATH} = '/bin:/usr/bin';
 my %WORDS = ();
@@ -66,6 +66,17 @@ sub fill_words($)
 	return $recenica;
 }
 
+
+# Fixing starting letter to upcase, and add '.' or '!' at random.
+sub fix_case($)
+{
+	my ($s) = @_;
+	$s =~ s/^(\w)/\u$1/;
+	my @end = qw(. !);
+	$s .= get_random1 (\@end);
+	return $s;
+}
+
 ###
 ### here goes the main
 ###
@@ -78,4 +89,4 @@ if ($DEBUG > 5) {
 	say Dumper(\@KONSTRUKCIJE);
 }
 
-say fill_words(get_random1(\@KONSTRUKCIJE));
+say fix_case(fill_words(get_random1(\@KONSTRUKCIJE)));
