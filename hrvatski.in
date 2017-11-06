@@ -1,5 +1,5 @@
 # startamo sa "RECENICA"
-RECENICA IMENICA_GLAGOL OBJEKT
+RECENICA IMENICA_GLAGOL OBJEKTX
 
 # Hrv. padeži na https://hr.wikipedia.org/wiki/Pade%C5%BE :
 #    nominativ - tko?, što? - (Tko je trčao?)
@@ -10,13 +10,14 @@ RECENICA IMENICA_GLAGOL OBJEKT
 #    instrumental - (s) kim?, (s) čim?
 #    vokativ - oj!, ej! - (dozivanje)
 
+
+# Format: IMENICA1AM - Imenica jednine (1) u Akuzativu (A) "koga? sto?" Muskog roda (M) -- npr. "djeda"
 IMENICA_GLAGOL IMENICA_GLAGOL1
 IMENICA_GLAGOL IMENICA_GLAGOL2
 
 IMENICA_GLAGOL1 IMENICA1N GLAGOL1
 IMENICA_GLAGOL2 IMENICA2N GLAGOL2
 
-# Format: IMENICA1AM - Imenica jednine (1) u Akuzativu (A) "koga? sto?" Muskog roda (M) -- npr. "djeda"
 OBJEKT IMENICA1AM
 OBJEKT IMENICA1AZ
 OBJEKT IMENICA1AS
@@ -31,6 +32,8 @@ OBJEKT IMENICA2A_U
 OBJEKT PRIDJEV2A_E IMENICA2A_E
 OBJEKT PRIDJEV2A_U IMENICA2A_U
 
+X .
+X !
 
 
 # subjekti radnje
@@ -97,10 +100,8 @@ IMENICA2N djedovi
 IMENICA2N tate
 IMENICA2N ZAMJENICA2N
 
-ZAMJENICA2N mi
-ZAMJENICA2N vi
+ZAMJENICA2N one
 ZAMJENICA2N oni
-
 
 
 # predikati
@@ -155,7 +156,6 @@ IMENICA1AM Marina
 IMENICA1AM Matiju
 IMENICA1AM Marka
 IMENICA1AM Ivana
-IMENICA1AM Jarun
 IMENICA1AM psa
 IMENICA1AM djeda
 IMENICA1AM slona
@@ -166,13 +166,14 @@ IMENICA1AM nilskog konja
 PRIDJEV1AS čist
 PRIDJEV1AS prljav
 PRIDJEV1AS dubok
+PRIDJEV1AS dobar
 PRIDJEV1AS mekan
 PRIDJEV1AS potrgan
 PRIDJEV1AS pospremljen
 
 IMENICA1AS tanjur
 IMENICA1AS krevet
-IMENICA1AS Jarun
+IMENICA1AS jastuk
 
 
 PRIDJEV2A_E lijepe
