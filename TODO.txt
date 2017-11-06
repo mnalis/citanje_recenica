@@ -1,8 +1,12 @@
 - odabir naučenih slova
 - samo velika slova ili velika + mala
 - UTF8
-- kombinacije riječi preferences 
+- kombinacije riječi preferences  (da ne ispadne "ne voli mamu" ili "ima ima zelenu baku")
+- padeži (da ne ispadne "djeca vole lijepu djeda")
+- kapitalizacija prvog slova u recenici
 
+- random dodavanje '!' ili '.'
+- KONSTRUKCIJE pametniji parser, da slici vise na REGEXP umjesto ogromne liste
 - fix razlika "nj" i "n"+"j" (kod odabira naucenih slova) (npr. tanjur)
 
 

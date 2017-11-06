@@ -1,15 +1,15 @@
-p1 ima
-p1 nema
-p1 voli
-p1 ne voli
-p1 želi
-p1 ne želi
+g1 ima
+g1 nema
+g1 voli
+g1 ne voli
+g1 želi
+g1 ne želi
 
-p2 imaju
-p2 nemaju
-p2 vole
-p2 ne vole
-p2 žele
+g2 imaju
+g2 nemaju
+g2 vole
+g2 ne vole
+g2 žele
 
 s1 mama
 s1 majka
