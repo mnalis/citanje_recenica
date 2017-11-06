@@ -10,7 +10,7 @@ use utf8;
 
 use scigen;
 
-my $DEBUG = 5;
+my $DEBUG = 1;
 my $DB_WORDS = 'hrvatski.in';
 my $ONLY_UPPERCASE = 0;
 my $LETTERS = 'manieouljr';	# by default accept all letters - FIXME - "\w"
@@ -49,5 +49,21 @@ if ($DEBUG > 7) {
 }
 
 my $start_rule = "RECENICA";
-my $recenica = scigen::generate ($hrv_dat, $start_rule, $hrv_RE, 0, 1);
-say fix_case($recenica);
+my $recenica = 'XXX_%UNDEF0%';
+my $count = 10000;
+my $ok_slova = qr/^[$LETTERS \.!]+$/i;
+
+# FIXME: this is rather stupid and slow way to eliminate sentances with invalid letters, but is quickest to implement... should really modify scigen.pm one day (but watch out for non-expanded macros if there is nothing matching them!)
+while ($count-- > 0 and $recenica !~ /$ok_slova/) {
+	$recenica = scigen::generate ($hrv_dat, $start_rule, $hrv_RE, 0, 1);
+	chomp $recenica;
+	$DEBUG > 1 && say "Pokusavam recenicu '$recenica' u setu slova '$ok_slova'";
+}
+
+if ($count > 0) {
+	say fix_case($recenica);
+	$DEBUG > 0 && say "(count went down to $count)";
+} else {
+	say "(Nažalost, ne mogu pronaći rečenicu koji koristi samo slova: $LETTERS)";
+}
+
