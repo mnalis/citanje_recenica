@@ -5,9 +5,11 @@
 use strict;
 use feature 'say';
 use autodie qw(:all);
+use utf8;
 
 my $DB = 'rjecnik.txt';
 my $DEBUG = 0;
+my $ONLY_UPPERCASE = 1;
 
 $ENV{PATH} = '/bin:/usr/bin';
 my %WORDS = ();
@@ -26,7 +28,7 @@ my @KONSTRUKCIJE = (
 # reads the database
 sub read_db()
 {
-	open my $db, '<', $DB;
+	open my $db, '<:encoding(UTF-8)', $DB;
 	while (<$db>) {
 		next if /^\s*(#.*)?$/;	# skip empty lines and comments
 		chomp;
@@ -71,7 +73,11 @@ sub fill_words($)
 sub fix_case($)
 {
 	my ($s) = @_;
-	$s =~ s/^(\w)/\u$1/;
+	if ($ONLY_UPPERCASE) {
+		$s = uc ($s);
+	} else {
+		$s = ucfirst ($s);
+	}
 	my @end = qw(. !);
 	$s .= get_random1 (\@end);
 	return $s;
@@ -81,6 +87,7 @@ sub fix_case($)
 ### here goes the main
 ###
 
+binmode STDOUT, ':utf8';
 read_db();	# initialize the DB
 
 if ($DEBUG > 5) {
