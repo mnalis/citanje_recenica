@@ -19,7 +19,6 @@ package scigen;
 
 use strict;
 use IO::File;
-use Data::Dumper;
 
 #### daemon settings ####
 
@@ -130,37 +129,24 @@ sub pop_first_rule {
 }
 
 sub pretty_print {
-
     my ($s) = shift;
 
     my $news = "";
     my @lines = split( /\n/, $s );
     foreach my $line (@lines) {
-
-	my $newline = "";
-
 	$line =~ s/(\s+)([\.\,\?\;\:])/$2/g;
 	$line =~ s/(\b)(a)\s+([aeiou])/$1$2n $3/gi;
 
-	$newline = $line;
+	my $newline = $line;
 	$newline =~ s/\\Em/\\em/g;
 
 	if( $newline !~ /\n$/ ) {
 	    $newline .= "\n";
 	}
 	$news .= $newline;
-
     }
 
     return $news;
-}
-
-sub break_latex($$$) {
-    my ($text, $reqlen, $fldlen) = @_;
-    if( !defined $text ) {
-	$text = "";
-    }
-    return { $text, "" };
 }
 
 sub expand {
