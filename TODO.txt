@@ -1,0 +1,9 @@
+- odabir naučenih slova
+- samo velika slova ili velika + mala
+- UTF8
+- kombinacije riječi preferences 
+
+- fix razlika "nj" i "n"+"j" (kod odabira naucenih slova) (npr. tanjur)
+
+
+- convert to JS u single HTML?
