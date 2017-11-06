@@ -7,34 +7,39 @@ use feature 'say';
 use autodie qw(:all);
 use utf8;
 
-my $DB = 'rjecnik.txt';
-my $DEBUG = 0;
+my $DEBUG = 9;
+my $DB_WORDS = 'rjecnik.txt';
+my $DB_CONSTRUCTS = 'recenice.txt';
 my $ONLY_UPPERCASE = 1;
+my $LETTERS = 'manieouljr';	# by default accept all letters
 
 $ENV{PATH} = '/bin:/usr/bin';
 my %WORDS = ();
-
-my @KONSTRUKCIJE = (
-	"s1 g1 o1",
-	"s1 g1 o2",
-	"s1 g1 p1 o1",
-	"s1 g1 p2 o2",
-	"s2 g2 o1",
-	"s2 g2 o2",
-	"s2 g2 p1 o1",
-	"s2 g2 p2 o2",
-);
+my @KONSTRUKCIJE = ();
 
 # reads the database
 sub read_db()
 {
-	open my $db, '<:encoding(UTF-8)', $DB;
-	while (<$db>) {
+	open my $db_words, '<:encoding(UTF-8)', $DB_WORDS;
+	while (<$db_words>) {
 		next if /^\s*(#.*)?$/;	# skip empty lines and comments
 		chomp;
 		my ($type, $word) = split ' ', $_, 2;
 		$DEBUG > 7 && say "parsing $type => $word";
+		if ($word !~ /^[$LETTERS ]+$/i) {
+			$DEBUG > 8 && say "skipping $word, as it does not contain only $LETTERS";
+			next;		# skip words containing non yet learned letters
+		}
 		push @{$WORDS{$type}}, $word;
+		$DEBUG > 8 && say "adding $word";
+	}
+
+	open my $db_constructs, '<:encoding(UTF-8)', $DB_CONSTRUCTS;
+	while (<$db_constructs>) {
+		next if /^\s*(#.*)?$/;	# skip empty lines and comments
+		chomp;
+		push @KONSTRUKCIJE, $_;
+		$DEBUG > 8 && say "adding construct $_";
 	}
 }
 
