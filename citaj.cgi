@@ -1,5 +1,5 @@
 #!/usr/bin/perl -T
-# by Matija Nalis <mnalis-perl@voyager.hr> GPLv3+ started 20171106
+# by Matija Nalis <mnalis-perl@voyager.hr> AGPLv3+ started 20171106
 # generira jednostavne rečenice za čitanje (za prvašiće - polaznike prvog razreda osnovne škole)
 
 use strict;
