@@ -1,0 +1,70 @@
+p1 ima
+p1 nema
+p1 voli
+p1 ne voli
+p1 želi
+p1 ne želi
+
+p2 imaju
+p2 nemaju
+p2 vole
+p2 ne vole
+p2 žele
+
+s1 mama
+s1 majka
+s1 tata
+s1 otac
+s1 baka
+s1 djed
+s1 Marin
+s1 Ksenija
+s1 Matija
+s1 Ivan
+s1 Ivana
+s1 Marko
+s1 Pero
+s1 Ivica
+
+s2 djeca
+s2 tete
+s2 bake
+s2 djedovi
+s2 mame
+s2 tate
+
+p1 lijepu
+p1 visoku
+p1 nisku
+p1 plavu
+p1 crnu
+
+p2 lijepe
+p2 visoke
+p2 zelene
+
+o1 mamu
+o1 baku
+o1 djeda
+o1 Marina
+o1 Kseniju
+o1 Matiju
+o1 Marka
+o1 Ivana
+o1 Ivanu
+
+o1 loptu
+o1 kuću
+o1 jabuku
+o1 tanjur
+o1 pernicu
+o1 olovku
+o1 krevet
+o1 psa
+o2 pticu
+
+o2 igračke
+o2 lopte
+o2 hrčke
+o2 pse
+o2 mačke
