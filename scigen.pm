@@ -20,19 +20,12 @@ package scigen;
 use strict;
 use IO::File;
 use Data::Dumper;
-use vars qw($SCIGEND_PORT);
 
 #### daemon settings ####
-$SCIGEND_PORT = 4724;
 
 sub dup_name {
     my $name = shift;
     return $name . "!!!";
-}
-
-sub file_name {
-    my $name = shift;
-    return $name . ".file";
 }
 
 sub read_rules {
@@ -51,30 +44,6 @@ sub read_rules {
 	    $name = $1;
 	    push @{$rules->{dup_name("$name")}}, "";
 	    next;
-	}
-
-	# include rule
-	if( $name =~ /\.include$/ ) {
-	    my $file = $words[0];
-	    # make sure we haven't already included this file
-	    # NOTE: this allows the main file to be included at most twice
-	    if( defined $rules->{&file_name($file)} ) {
-		if( $debug > 0 ) {
-		    print "Skipping duplicate included file $file\n";
-		}
-		next;
-	    } else {
-		$rules->{&file_name($file)} = 1;
-	    }
-	    if( $debug > 0 ) {
-		print "Opening included file $file\n";
-	    }
-	    my $inc_fh = new IO::File ("<$file");
-	    if( !defined $inc_fh ) {
-		die( "Couldn't open included file $file" );
-	    }
-	    &read_rules( $inc_fh, $rules, undef, $debug );
-	    next; # we don't want to have .include itself be a rule
 	}
 
 	if ($#words == 0 && $words[0] eq '{') {
@@ -118,7 +87,6 @@ sub read_rules {
 }
 
 sub compute_re {
-
     # must sort; order matters, and we want to make sure that we get
     # the longest matches first
     my ($rules, $RE) = @_;
@@ -129,7 +97,6 @@ sub compute_re {
 
 sub generate {
     my ($rules, $start, $RE, $debug, $pretty) = @_;
-
 
     my $s = expand ($rules, $start, $RE, $debug);
     if( $pretty ) {

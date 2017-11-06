@@ -22,7 +22,6 @@ use lib '.';
 use strict;
 use scigen;
 use IO::File;
-use IO::Socket;
 
 my $tex_file = "test.tex";
 
