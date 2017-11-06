@@ -25,12 +25,17 @@ s1 Ivana
 s1 Marko
 s1 Pero
 s1 Ivica
+s1 Perica
+s1 Marica
+s1 kraljica
+s1 kralj
+s1 princ
 
+s2 mame
 s2 djeca
 s2 tete
 s2 bake
 s2 djedovi
-s2 mame
 s2 tate
 
 p1 lijepu
