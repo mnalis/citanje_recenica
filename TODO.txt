@@ -1,3 +1,4 @@
+- vise glagola - npr. "jede", "popravlja" koji imaju svoje objekte (a OBJEKTda je onda OBJEKT_HRANA ili OBJEKT_STVAR ili OBJEKT_XXX)
 - odabir naučenih slova - scigen kako? $fd_in da je output od "grep xxxx" ?
 - samo velika slova ili velika + mala
 - UTF8
