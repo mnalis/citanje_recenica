@@ -15,10 +15,10 @@ textarea { vertical-align: middle; }
 function doAsyncUpdate() {
 	'use strict';
 
+	document.getElementById('submit').className = "c_progress";
 	var letters = document.getElementById('letters').value;
 	var upcase = document.getElementById('upcase').checked ? 1 : 0;
 	//alert ("upcase=" + upcase + "\nletters=" + letters);
-	document.getElementById('submit').className = "c_progress";
 
 	var xreq = new XMLHttpRequest();
 	xreq.onreadystatechange = function() {
