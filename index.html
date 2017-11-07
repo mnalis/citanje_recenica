@@ -6,7 +6,7 @@
 
 <style>
 textarea { vertical-align: middle; }
-:disabled, [disabled] { background: #FFFFF0; }
+#odgovor { background: #FFFFF0; color:black; }
 </style>
 
 <script>
@@ -20,10 +20,12 @@ function doAsyncUpdate() {
 	var xreq = new XMLHttpRequest();
 	xreq.onreadystatechange = function() {
 		if (xreq.readyState == XMLHttpRequest.DONE && xreq.status == 200) {
-			document.getElementById("odgovor").innerHTML = xreq.responseText;
+			document.getElementById("odgovor").value = xreq.responseText;
 		}
 	};
-	xreq.open("GET", "citaj.cgi?upcase=" + upcase + ";letters=" + letters, true);
+	var url="citaj.cgi?upcase=" + upcase + ";letters=" + letters;
+	//alert ("url="+url);
+	xreq.open("GET", url, true);
 	xreq.send();
 	return false;
 }
@@ -42,7 +44,7 @@ function doAsyncUpdate() {
 		</label>
 		<p>
 		<label>Rečenica:
-			<input type=text size=100 id=odgovor disabled></textarea>
+			<input type=text size=100 id=odgovor value="test" disabled></textarea>
 		</label>
 		<p>
 		<input type=submit value="Generiraj!">
