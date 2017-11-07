@@ -7,6 +7,8 @@
 <style>
 textarea { vertical-align: middle; }
 #odgovor { background: #FFFFF0; color:black; }
+.c_default { cursor: default; }
+.c_progress { cursor: progress; }
 </style>
 
 <script>
@@ -16,11 +18,13 @@ function doAsyncUpdate() {
 	var letters = document.getElementById('letters').value;
 	var upcase = document.getElementById('upcase').checked ? 1 : 0;
 	//alert ("upcase=" + upcase + "\nletters=" + letters);
+	document.getElementById('submit').className = "c_progress";
 
 	var xreq = new XMLHttpRequest();
 	xreq.onreadystatechange = function() {
 		if (xreq.readyState == XMLHttpRequest.DONE && xreq.status == 200) {
 			document.getElementById("odgovor").value = xreq.responseText;
+			document.getElementById('submit').className = "c_default";
 		}
 	};
 	var url="citaj.cgi?upcase=" + upcase + ";letters=" + letters;
@@ -47,7 +51,7 @@ function doAsyncUpdate() {
 			<input type=text size=100 id=odgovor value="test" disabled></textarea>
 		</label>
 		<p>
-		<input type=submit value="Generiraj!">
+		<input type=submit id=submit class="c_default" value="Generiraj!">
 	</form>
 
 	<footer>
