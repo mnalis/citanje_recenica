@@ -61,7 +61,7 @@ print $q->header (
 	);
 
 $LETTERS = validate_oknull('letters', "[$LETTERS]{0,27}") || $LETTERS;
-$ONLY_UPPERCASE = validate_oknull('upcase', '[01]');
+$ONLY_UPPERCASE = validate_oknull('upcase', '[01]') || 0;
 $DEBUG = validate_oknull('debug', '[0-9]') || 0;
 $DEBUG > 1 && say "Allowed letters=$LETTERS (" . length($LETTERS) . "), upcase=$ONLY_UPPERCASE";
 
