@@ -55,6 +55,12 @@ OSOBA1N djed
 OSOBA1N kraljica
 OSOBA1N kralj
 OSOBA1N princ
+OSOBA1N prijatelj
+OSOBA1N prijateljica
+OSOBA1N susjed
+OSOBA1N susjeda
+OSOBA1N profesor
+OSOBA1N profesorica
 
 STVAR1N bubamara
 STVAR1N ptica
@@ -93,6 +99,19 @@ IME1N Mislav
 IME1N Ema
 IME1N Ivo
 IME1N Luka
+IME1N Dorijan
+IME1N Marija
+IME1N Darija
+IME1N Sandra
+IME1N Iva
+IME1N Goga
+IME1N Goran
+IME1N Hrvoje
+IME1N Ivica
+IME1N Martina
+IME1N Slavica
+IME1N Jelena
+IME1N Renata
 
 
 
@@ -164,6 +183,8 @@ IMENICA1AM psa
 IMENICA1AM djeda
 IMENICA1AM slona
 IMENICA1AM nilskog konja
+IMENICA1AM Dorijana
+IMENICA1AM Matiju
 
 
 
