@@ -1,6 +1,3 @@
-all: publish
-
-
 check: hrvatski.in
 	@! grep '^[A-Z]' $< | sort | uniq -dc | grep . 
 
