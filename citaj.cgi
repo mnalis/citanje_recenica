@@ -12,7 +12,7 @@ use CGI qw(-utf8);
 
 use scigen;
 
-my $DEBUG = 1;
+my $DEBUG = 0;
 my $DB_WORDS = 'hrvatski.in';
 my $ONLY_UPPERCASE = 0;
 my $LETTERS = 'abcćčdđefghijklmnoprsštuvzž';
@@ -62,6 +62,7 @@ print $q->header (
 
 $LETTERS = validate_oknull('letters', "[$LETTERS]{0,27}") || $LETTERS;
 $ONLY_UPPERCASE = validate_oknull('upcase', '[01]');
+$DEBUG = validate_oknull('debug', '[0-9]') || 0;
 $DEBUG > 1 && say "Allowed letters=$LETTERS (" . length($LETTERS) . "), upcase=$ONLY_UPPERCASE";
 
 read_db();	# initialize the DB
