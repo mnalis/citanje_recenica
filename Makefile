@@ -1,5 +1,6 @@
 check: hrvatski.in
-	@! grep '^[A-Z]' $< | sort | uniq -dc | grep . 
+	! grep '^[A-Z]' $< | sort | uniq -dc | grep . 
+	./dictcheck.pl $<
 
 publish: check
 	git commit -a
