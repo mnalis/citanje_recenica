@@ -5,5 +5,15 @@
 <title>Generator rečenica za prvašiće</title>
 </head>
 <body>
+	<form action="citaj.cgi" method=GET>
+		<label>Naučena slova
+			<input type=text name="letters" maxlength=27 size=27>
+		</label>
+		<br>
+		<label>Sva VELIKA slova?
+			<input type="checkbox" name="love" value="love" id="love">
+		</label>
+		<input type=submit value="Generiraj!">
+	</form>
 </body>
 </html>
