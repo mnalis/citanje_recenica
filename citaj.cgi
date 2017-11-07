@@ -8,7 +8,7 @@ use feature 'say';
 use autodie qw(:all);
 use utf8;
 
-use CGI;
+use CGI qw(-utf8);
 
 use scigen;
 
