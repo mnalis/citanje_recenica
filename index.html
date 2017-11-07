@@ -3,22 +3,51 @@
 <head>
 <meta charset="utf-8">
 <title>Generator rečenica za prvašiće</title>
+
+<style>
+textarea { vertical-align: middle; }
+</style>
+
+<script>
+function doAsyncUpdate() {
+	'use strict';
+
+	var letters = document.getElementById('letters').value;
+	var upcase = document.getElementById('upcase').value;
+
+	var xreq = new XMLHttpRequest();
+	xreq.onreadystatechange = function() {
+		if (xreq.readyState == XMLHttpRequest.DONE && xreq.status == 200) {
+			document.getElementById("odgovor").innerHTML = xreq.responseText;
+		}
+	};
+	xreq.open("GET", "citaj.cgi?upcase=" + upcase + ";letters=" + letters, true);
+	xreq.send();
+	return false;
+}
+</script>
+
 </head>
+
 <body>
-	<form action="citaj.cgi" method=GET>
-		<label>Naučena slova
-			<input type=text name="letters" value="iaouemnvkjlsštprbcčćzždđghf" maxlength=27 size=27>
+	<form action="citaj.cgi" method=GET onSubmit="return doAsyncUpdate();">
+		<label>Naučena slova:
+			<input type=text name="letters" id="letters" value="iaouemnvkjlsštprbcčćzždđghf" maxlength=27 size=27>
 		</label>
 		<br>
-		<label>Sva VELIKA slova?
-			<input type="checkbox" name="upcase" value="1">
+		<label>Koristiti SAMO VELIKA slova?
+			<input type="checkbox" name="upcase" id="upcase" value="1">
 		</label>
-		<br>
+		<p>
+		<label>Rečenica:
+			<textarea cols=100 rows=1 id=odgovor disabled></textarea>
+		</label>
+		<p>
 		<input type=submit value="Generiraj!">
 	</form>
 
 	<footer>
-		Ovo je <A HREF="https://github.com/mnalis/citanje_recenica">slobodni softver</A>, predložite ili sami napravite izmjene!
+		<p>Ovo je <A HREF="https://github.com/mnalis/citanje_recenica">slobodni softver</A>, predložite ili sami napravite izmjene!</p>
 	</footer>
 </body>
 </html>
