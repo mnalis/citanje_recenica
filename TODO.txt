@@ -1,18 +1,19 @@
 - HTML JS + web2.0 async CGI calling?
-- mozda dodati scoring koliko je recenica dobro procitano?
+- ljepsi HTML i back button ili nesto
 
-- vise glagola - npr. "jede", "popravlja" koji imaju svoje objekte (a OBJEKTda je onda OBJEKT_HRANA ili OBJEKT_STVAR ili OBJEKT_XXX)
-- odabir naučenih slova - scigen kako? $fd_in da je output od "grep xxxx" ?
-- samo velika slova ili velika + mala
-- UTF8
+- vise glagola - npr. "jede", "popravlja" koji imaju svoje objekte (a OBJEKT da je onda OBJEKT_HRANA ili OBJEKT_STVAR ili OBJEKT_XXX)
+
++ samo velika slova ili velika + mala
++ UTF8
++? padeži (da ne ispadne "djeca vole lijepu djeda")
++ kapitalizacija prvog slova u recenici
+
 - kombinacije riječi preferences  (da ne ispadne "ne voli mamu" ili "ima ima zelenu baku")
-- padeži (da ne ispadne "djeca vole lijepu djeda")
-- kapitalizacija prvog slova u recenici
++ random dodavanje '!' ili '.'
++ KONSTRUKCIJE pametniji parser, da slici vise na REGEXP umjesto ogromne liste
 
-- random dodavanje '!' ili '.'
-- KONSTRUKCIJE pametniji parser, da slici vise na REGEXP umjesto ogromne liste
 - fix razlika "nj" i "n"+"j" (kod odabira naucenih slova) (npr. tanjur)
-
-
 - convert to JS u single HTML?
 - prijaviti na http://www.skole.hr/nastavni-materijali/ukljucite-se ?
+- pametniji odabir naučenih slova - scigen kako? $fd_in da je output od "grep xxxx" ?
+- mozda dodati scoring koliko je recenica dobro procitano?
