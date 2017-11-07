@@ -1,5 +1,9 @@
 # startamo sa "RECENICA"
-RECENICA IMENICA_GLAGOL OBJEKTX
+RECENICA RECENICA_IZJAVNA
+RECENICA RECENICA_UPITNA
+
+RECENICA_IZJAVNA IMENICA_GLAGOL OBJEKTX
+RECENICA_UPITNA da li IMENICA_GLAGOL OBJEKTQ
 
 # Hrv. padeži na https://hr.wikipedia.org/wiki/Pade%C5%BE :
 #    nominativ - tko?, što? - (Tko je trčao?)
@@ -36,7 +40,7 @@ OBJEKT PRIDJEV2A_O IMENICA2A_O
 
 X .
 X !
-
+Q ?
 
 # subjekti radnje
 

@@ -76,7 +76,7 @@ if ($DEBUG > 7) {
 my $start_rule = "RECENICA";
 my $recenica = 'XXX_%UNDEF0%';
 my $count = 10000;
-my $ok_slova = qr/^[$LETTERS \.!]+$/i;
+my $ok_slova = qr/^[$LETTERS \.!\?]+$/i;
 
 # FIXME: this is rather stupid and slow way to eliminate sentances with invalid letters, but is quickest to implement... should really modify scigen.pm one day (but watch out for non-expanded macros if there is nothing matching them!)
 while ($count-- > 0 and $recenica !~ /$ok_slova/) {
