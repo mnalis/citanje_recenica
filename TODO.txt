@@ -1,3 +1,6 @@
+- Make check provjera da li fali ruleova, ili ih ima nekoristenih mozda
+
+- staviti upitnik u listu slova (da se mogu izbjegavati upitne rečenice na početku)?
 - HTML JS + web2.0 async CGI calling?
 - ljepsi HTML i back button ili nesto
 
