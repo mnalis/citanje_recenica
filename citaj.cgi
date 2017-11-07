@@ -15,7 +15,7 @@ use scigen;
 my $DEBUG = 1;
 my $DB_WORDS = 'hrvatski.in';
 my $ONLY_UPPERCASE = 0;
-my $LETTERS = 'abcćčdđefghijklmnoprsštuvzž';	# by default accept all letters - FIXME - "\w"
+my $LETTERS = 'abcćčdđefghijklmnoprsštuvzž';
 
 $ENV{PATH} = '/bin:/usr/bin';
 
