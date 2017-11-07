@@ -38,6 +38,10 @@ function doAsyncUpdate() {
 </head>
 
 <body>
+	<h1>Čitanje rečenica</h1>
+	<p>Ovaj web alat je namjenjen učenicima prvih razreda, kako bi mogli ponavljati čitanje slova koja su naučili. <br>
+	Napravljen je zato, jer su rečenice iz knjige klinci već naučili napamet pa ih više ne čitaju nego recitiraju iz glave &#9786;
+	</p>
 	<form action="citaj.cgi" method=GET onSubmit="return doAsyncUpdate();">
 		<label>Naučena slova:
 			<input type=text name="letters" id="letters" value="iaouemnvkjlsštprbcčćzždđghf" maxlength=27 size=27>
@@ -56,6 +60,7 @@ function doAsyncUpdate() {
 
 	<footer>
 		<p>Ovo je <A HREF="https://github.com/mnalis/citanje_recenica">slobodan softver</A>, predložite izmjene na mnalis-skole&#64;voyager&#46;hr (ili ih sami napravite!)</p>
+		(za sada u 11/2017. je u planu proširenje broja riječi i rečeničnih konstrukcija)
 	</footer>
 </body>
 </html>
