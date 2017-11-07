@@ -67,51 +67,72 @@ STVAR1N ptica
 STVAR1N maca
 STVAR1N zmija
 
-IME1N Marin
-IME1N Ksenija
-IME1N Matija
-IME1N Ivan
-IME1N Ivana
-IME1N Marko
-IME1N Pero
-IME1N Ivica
-IME1N Perica
-IME1N Marica
+
+
 IME1N Ana
-IME1N Marta
-IME1N Tomo
-IME1N Tonka
-IME1N Matko
-IME1N Josip
-IME1N Paula
-IME1N Stjepan
-IME1N Paško
-IME1N Pavao
-IME1N Martin
-IME1N Marta
-IME1N Roko
-IME1N Petar
-IME1N Marija
+IME1N Ante
 IME1N Boris
 IME1N Borna
 IME1N Branimir
-IME1N Mislav
-IME1N Ema
-IME1N Ivo
-IME1N Luka
-IME1N Dorijan
-IME1N Marija
 IME1N Darija
-IME1N Sandra
-IME1N Iva
+IME1N David
+IME1N Davor
+IME1N Dorijan
+IME1N Eduard
+IME1N Ema
+IME1N Emanuel
+IME1N Eva
+IME1N Fernanda
+IME1N Gabrijel
 IME1N Goga
 IME1N Goran
 IME1N Hrvoje
+IME1N Iva
+IME1N Ivan
+IME1N Ivana
 IME1N Ivica
-IME1N Martina
-IME1N Slavica
+IME1N Ivo
+IME1N Ivor
 IME1N Jelena
+IME1N Josip
+IME1N Joško
+IME1N Ksenija
+IME1N Lana
+IME1N Leonardo
+IME1N Lucija
+IME1N Luka
+IME1N Luna
+IME1N Maja
+IME1N Margita
+IME1N Marica
+IME1N Marija
+IME1N Marin
+IME1N Marko
+IME1N Marta
+IME1N Martin
+IME1N Martina
+IME1N Matija
+IME1N Matko
+IME1N Mislav
+IME1N Nikol
+IME1N Paško
+IME1N Paula
+IME1N Pavao
+IME1N Perica
+IME1N Pero
+IME1N Petar
 IME1N Renata
+IME1N Roko
+IME1N Sandra
+IME1N Sara
+IME1N Slavica
+IME1N Stjepan
+IME1N Šime
+IME1N Tara
+IME1N Teodor
+IME1N Tin
+IME1N Tomo
+IME1N Tonka
 
 
 
@@ -144,7 +165,7 @@ GLAGOL2 žele
 
 
 
-# Objekti radnje: Akuzativ - koga ili što vidim? Muski, Zenski, Srednji rod 
+# Objekti radnje: Akuzativ - koga ili što vidim? Muski, Zenski, Srednji rod
 
 PRIDJEV1AZ lijepu
 PRIDJEV1AZ visoku
@@ -184,7 +205,6 @@ IMENICA1AM djeda
 IMENICA1AM slona
 IMENICA1AM nilskog konja
 IMENICA1AM Dorijana
-IMENICA1AM Matiju
 
 
 
@@ -201,6 +221,7 @@ IMENICA1AS krevet
 IMENICA1AS jastuk
 
 
+
 PRIDJEV2A_E lijepe
 PRIDJEV2A_E zelene
 PRIDJEV2A_E dobre
@@ -208,7 +229,7 @@ PRIDJEV2A_E jake
 PRIDJEV2A_E visoke
 PRIDJEV2A_E plave
 PRIDJEV2A_E tvrde
-PRIDJEV2A_E mekane 
+PRIDJEV2A_E mekane
 
 IMENICA2A_E majke
 IMENICA2A_E igračke
