@@ -53,13 +53,14 @@ sub validate_oknull($$)
 ###
 
 binmode STDOUT, ':utf8';
+binmode STDERR, ':utf8';
 
 $q  = new CGI;
 print $q->header (
 	-charset    => 'utf-8',
 	);
 
-$LETTERS = validate_oknull('letters', "[$LETTERS]{1,27}") || $LETTERS;
+$LETTERS = validate_oknull('letters', "[$LETTERS]{0,27}") || $LETTERS;
 $ONLY_UPPERCASE = validate_oknull('upcase', '[01]');
 $DEBUG > 1 && say "Allowed letters=$LETTERS (" . length($LETTERS) . "), upcase=$ONLY_UPPERCASE";
 
