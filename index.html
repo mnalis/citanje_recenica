@@ -6,6 +6,7 @@
 
 <style>
 textarea { vertical-align: middle; }
+:disabled, [disabled] { background: #FFFFF0; }
 </style>
 
 <script>
@@ -13,7 +14,8 @@ function doAsyncUpdate() {
 	'use strict';
 
 	var letters = document.getElementById('letters').value;
-	var upcase = document.getElementById('upcase').value;
+	var upcase = document.getElementById('upcase').checked ? 1 : 0;
+	//alert ("upcase=" + upcase + "\nletters=" + letters);
 
 	var xreq = new XMLHttpRequest();
 	xreq.onreadystatechange = function() {
@@ -40,7 +42,7 @@ function doAsyncUpdate() {
 		</label>
 		<p>
 		<label>Rečenica:
-			<textarea cols=100 rows=1 id=odgovor disabled></textarea>
+			<input type=text size=100 id=odgovor disabled></textarea>
 		</label>
 		<p>
 		<input type=submit value="Generiraj!">
