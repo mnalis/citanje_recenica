@@ -7,7 +7,7 @@ RECENICA_IZJAVNA IMENICA_GLAGOL OBJEKTX
 RECENICA_UPITNA čija IMENICA1NZ GLAGOL1 OBJEKTQ
 RECENICA_UPITNA čiji IMENICA1NM GLAGOL1 OBJEKTQ
 RECENICA_UPITNA ima li IMENICA1NZ OBJEKTQ
-RECENICA_UPITNA voli li IMENICA1NZ OBJEKTQ BUGFIXMEFALI1
+RECENICA_UPITNA voli li IMENICA1NZ OBJEKTQ
 
 # Hrv. padeži na https://hr.wikipedia.org/wiki/Pade%C5%BE :
 #    nominativ - tko?, što? - (Tko je trčao?)
@@ -17,11 +17,6 @@ RECENICA_UPITNA voli li IMENICA1NZ OBJEKTQ BUGFIXMEFALI1
 #    lokativ - o kom?, o čem?[2] (u kom?, u čem?)
 #    instrumental - (s) kim?, (s) čim?
 #    vokativ - oj!, ej! - (dozivanje)
-
-BUGFIXMEVISKA2 nema
-BUGFIXMEVISKA2 ima
-BUGFIXMEVISKA3 nebitno
-
 
 # Format: IMENICA1AM - Imenica jednine (1) u Akuzativu (A) "koga? sto?" Muskog roda (M) -- npr. "djeda"
 IMENICA_GLAGOL IMENICA_GLAGOL1
