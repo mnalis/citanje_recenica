@@ -11,6 +11,9 @@
 + kapitalizacija prvog slova u recenici
 
 - kombinacije riječi preferences  (da ne ispadne "ne voli mamu" ili "ima ima zelenu baku")
+  po logici: slozi dictionary kao DJEVOJCICA VOLI_ZELI ZIVOTINJU_E|OSOBU_E, DJECAK NE_VOLI_ZELI ZIVOTINJU_E|IGRACKU_E, ...
+  mozda parser iz tog formata u scigen format?
+
 + random dodavanje '!' ili '.'
 + KONSTRUKCIJE pametniji parser, da slici vise na REGEXP umjesto ogromne liste
 
