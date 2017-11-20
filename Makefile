@@ -9,6 +9,7 @@ publish: check
 	git push
 
 update:
+	chown -R $(USER) .git/
 	umask 022 && env -i setuidgid $(USER) git pull
 	chmod a+r index.html
 
