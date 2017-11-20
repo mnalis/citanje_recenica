@@ -5,6 +5,7 @@
   3. https://webaim.org/resources/contrastchecker/ 
    i https://snook.ca/technical/colour_contrast/colour.html
   za provjeru kontrasta, boja i WCAG 2.0
+  4. napraviti izmjene pa pogledati stranicu u svim modovima na https://www.toptal.com/designers/colorfilter
 
   npr. #C5C9FC na #3C008F
   ili  #FFCE7F na #0000C2
