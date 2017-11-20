@@ -31,7 +31,7 @@ function doAsyncUpdate() {
 		}
 	};
 	var url="citaj.cgi?upcase=" + upcase + ";letters=" + letters;
-	if (must) { $url += ";must=" + must };
+	if (must) { url += ";must=" + must };
 	//alert ("url="+url);
 	xreq.open("GET", url, true);
 	xreq.send();
