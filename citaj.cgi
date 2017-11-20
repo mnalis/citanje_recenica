@@ -15,7 +15,8 @@ use scigen;
 my $DEBUG = 0;
 my $DB_WORDS = 'hrvatski.in';
 my $ONLY_UPPERCASE = 0;
-my $LETTERS = 'abcćčdđefghijklmnoprsštuvzž';
+my $LETTERS   = 'abcćčdđefghijklmnoprsštuvzž';
+my $UPLETTERS = 'ABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ';
 
 $ENV{PATH} = '/bin:/usr/bin';
 
@@ -61,9 +62,10 @@ print $q->header (
 	);
 
 $LETTERS = validate_oknull('letters', "[$LETTERS]{0,27}") || $LETTERS;
+my $MUST = validate_oknull('must', "[$LETTERS$UPLETTERS]") || '';
 $ONLY_UPPERCASE = validate_oknull('upcase', '[01]') || 0;
 $DEBUG = validate_oknull('debug', '[0-9]') || 0;
-$DEBUG > 1 && say "Allowed letters=$LETTERS (" . length($LETTERS) . "), upcase=$ONLY_UPPERCASE";
+$DEBUG > 1 && say "Allowed letters=$LETTERS (" . length($LETTERS) . "), must use=$MUST, upcase=$ONLY_UPPERCASE";
 
 read_db();	# initialize the DB
 
@@ -77,18 +79,23 @@ my $start_rule = "RECENICA";
 my $recenica = 'XXX_%UNDEF0%';
 my $count = 10000;
 my $ok_slova = qr/^[$LETTERS \.!\?]+$/i;
+my $found = 0;
 
 # FIXME: this is rather stupid and slow way to eliminate sentances with invalid letters, but is quickest to implement... should really modify scigen.pm one day (but watch out for non-expanded macros if there is nothing matching them!)
-while ($count-- > 0 and $recenica !~ /$ok_slova/) {
+# FIXME: also should support more than one $MUST letter
+while ($count-- > 0 and $found < 2) {
+	$found = 0;
 	$recenica = scigen::generate ($hrv_dat, $start_rule, $hrv_RE, 0, 1);
 	chomp $recenica;
-	$DEBUG > 3 && say "Pokusavam recenicu '$recenica' u setu slova '$ok_slova'";
+	$DEBUG > 3 && say "Pokusavam recenicu '$recenica' u setu slova '$ok_slova' (obavezna slova: $MUST)";
+	if ($recenica =~ /$ok_slova/) { $found++; }
+	if ($recenica =~ /$MUST/) { $found++; }
 }
 
 if ($count > 0) {
 	say fix_case($recenica);
 	$DEBUG > 0 && say "(count went down to $count)";
 } else {
-	say "(Nažalost, ne mogu pronaći rečenicu koji koristi samo slova: $LETTERS)";
+	say "(Nažalost, ne mogu pronaći rečenicu koji koristi samo slova: $LETTERS (obavezna slova: $MUST))";
 }
 
