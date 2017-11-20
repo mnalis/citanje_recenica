@@ -9,6 +9,6 @@ publish: check
 	git push
 
 update:
-	umask 022 && setuidgid $(USER) git pull
+	umask 022 && env -i setuidgid $(USER) git pull
 
 .PHONY: all check publish update
