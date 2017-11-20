@@ -19,6 +19,7 @@ function doAsyncUpdate() {
 
 	document.getElementById('submit').className = "c_progress";
 	var letters = document.getElementById('letters').value;
+	var must = document.getElementById('must').value;
 	var upcase = document.getElementById('upcase').checked ? 1 : 0;
 	//alert ("upcase=" + upcase + "\nletters=" + letters);
 
@@ -30,6 +31,7 @@ function doAsyncUpdate() {
 		}
 	};
 	var url="citaj.cgi?upcase=" + upcase + ";letters=" + letters;
+	if (must) { $url += ";must=" + must };
 	//alert ("url="+url);
 	xreq.open("GET", url, true);
 	xreq.send();
@@ -49,7 +51,7 @@ function doAsyncUpdate() {
 			<input type=text name="letters" id="letters" value="iaouemnvkjlsštprbcčćzždđghf" maxlength=27 size=27>
 		</label>
 		<label>(Obavezno slovo: 
-			<input type="text" name="must" maxlength=1 size=1 pattern="[abcćčdđefghijklmnoprsštuvzžABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ]" title="Opcionalno, ako želimo da rečenica mora imati neko slovo">)
+			<input type="text" name="must" id="must" maxlength=1 size=1 pattern="[abcćčdđefghijklmnoprsštuvzžABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ]?" title="Opcionalno, ako želimo da rečenica MORA imati neko slovo">)
 		</label>
 		<br>
 		<label>Koristiti SAMO VELIKA slova?
