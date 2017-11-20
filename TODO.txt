@@ -1,3 +1,14 @@
+- boje:
+  crna na #66AA55 ? ili plava #0003B3 na zelenu #B7D8B1
+  1. http://www.colorhexa.com za odabir boje, vidi Deuteranomaly na dnu
+  2. http://paletton.com/ choose Tetrad  (4-colors) za odabir kontrastne boje (dodatno Visual simulation odaberi razne color blind simlatione)
+  3. https://webaim.org/resources/contrastchecker/ 
+   i https://snook.ca/technical/colour_contrast/colour.html
+  za provjeru kontrasta, boja i WCAG 2.0
+
+  npr. #C5C9FC na #3C008F
+  ili  #FFCE7F na #0000C2
+
 - odabir max dužine riječi i max broja slova u riječi
 - staviti upitnik u listu slova (da se mogu izbjegavati upitne rečenice na početku)?
 - HTML JS + web2.0 async CGI calling?
