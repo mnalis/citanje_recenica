@@ -10,5 +10,6 @@ publish: check
 
 update:
 	umask 022 && env -i setuidgid $(USER) git pull
+	chmod a+r index.html
 
 .PHONY: all check publish update
