@@ -10,6 +10,8 @@
   npr. #C5C9FC na #3C008F
   ili  #FFCE7F na #0000C2
 
+- boje zasto se ne moze vise selektirati tekst da bude inverzno ?
+
 - odabir max dužine riječi i max broja slova u riječi
 - staviti upitnik u listu slova (da se mogu izbjegavati upitne rečenice na početku)?
 - HTML JS + web2.0 async CGI calling?
