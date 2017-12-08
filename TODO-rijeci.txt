@@ -29,7 +29,6 @@ drvo šumica kamen kućica listić knjižica slovo petica
 ura dječak djevojčica pas mačka krevet
 - dječak je u krevetu. pas nije u krevetu
 lopta vijača njihaljka bicikl
-Ivo Ana Luka Ema
 - Luka ima loptu. Ema nema vijaču.
 igračke lopta kocke medo lutka
 - kocke su u košari. olovka i šiljilo nisu u košari.
@@ -39,33 +38,33 @@ semafor pješački prijelaz vozila prometni znak
 - konzerva je u moru. ribe su u ribarnici.
 - more je plavo. sunce je žuto. miš je siv.
 i: kiša, miš, kišobran, riba, Ivo, igla
-a: Ana, auto, semafor, olovka, šal, mrav
-o: oblak, kos, voda, Ivo, lopta, ovca, slon, oko, ormar, balon, zvono, olovka, sladoled, oblak
-u: ura, lunjo, jastuk, Luka, uho, kuća, puž, jabuka, kruh udica, vuk
-e: električar, svjetlo, Stjepan, Ema, krevet, jabuke, Eva, vjeverica
-m: mačka, miš, mrlja, ormar, mjesec, majmun, pismo, Ema, eskim, mrav
-mama, ima, Ema, imam, mi, ime, Mia, Mima, me
+a:  auto, semafor, olovka, šal, mrav
+o: oblak, kos, voda, , lopta, ovca, slon, oko, ormar, balon, zvono, olovka, sladoled, oblak
+u: ura, lunjo, jastuk, , uho, kuća, puž, jabuka, kruh udica, vuk
+e: električar, svjetlo,  krevet, jabuke, , vjeverica
+m: mačka, miš, mrlja, ormar, mjesec, majmun, pismo, eskim, mrav
+mama, ima, Ema, imam, mi, ime,  me
 - Imam mamu. Mama im Emu. Mi imamo mamu.
 n: naočale. novine, noga, unuka, nos, zvono, slon, suce, kišobran, lonac, banana, paun, noj, nosorog
 na ona Nino nema mene on oni Nena Nina nemam
 - Mama ima Ninu. Ona nema Nenu. Neno ima mamu. Mama Neni: Ni-na, na-na!
 v: vlak, lokomotiva, vagon, Ivan, sova vrata, cvijet, zvijezda vrana, krov, Ivan, vaza
-ovo, Eva, novo, neven, novine, vi, Ivo Ivana, ovamo, Nevena
+ovo, Eva, novo, neven, novine, vi, Ivo Ivana, ovamo, 
 - Mama im Ivu. Ona nema novine. Eno Ive! Mama: Evo Ivone! Ivona: Evo mene i Ivana!
-k: koka, Ranko, krava, jabuka, kruška. oko, kapa, patka, rak, kiša, konj, lokomotiva
-koka, vuk, kuna, kamen, nekako, mak, kako, Kiki, Vinka, mekano
+k: koka,  krava, jabuka, kruška. oko, kapa, patka, rak, kiša, konj, lokomotiva
+koka, vuk, kuna, kamen, nekako, mak, kako, mekano
 - Koka: Ko! Ko! Ko! Kiki ima koku. Vinka ima mak. Mi nemamo vuka.
-j: jabuka, zmaj, Jasna, cvijeće, jež, Jelena, jaje, snijeg, jagoda
-ja, ujo, moj, jaje, majka, noj, jako, ujna, Mijo, Jakov
+j: jabuka, zmaj,  cvijeće, jež, , jaje, snijeg, jagoda
+ja, ujo, moj, jaje, majka, noj, jako, ujna, 
 - Vjeko ima uju. On ima ujnu. Ujna nema jaje. Janko: Evo moje mame! Ivanka: Moj je ujak jak.
 l: oblak, leptir, pčela, livada, telefon, sladoled, mobitel, lav, balon, limun, lisica, slon
 lav, vila, voli, jelen, limun, val, Lana, Jelena, valovi olovka
 - Mama ima Lanu. Ona je Malena. Mama ima i Jelenu. Jelenna jako voli mamu. Koliko one vole Nikolu?
 s: sunce, srce, slavuj, strašilo, slon, mjesec, sova, nos, srce, kos, semafor, kost
-sok, kosa, sol, jesen, sjajno sama, slova, Mislav, Senka, maslina
+sok, kosa, sol, jesen, sjajno sama, slova, , maslina
 - Ja sam Jasna. Volim jesen. Ksenija je moja seka. Jasna i Ksenija se vesele. One se smiju.
 š: šuma, kiša, lišće, miš, šal, šešir, kruška, Šime, kiša, šišmiš
-miš, kiša, škola, sluša, šišmiš, još,šal,više, Šime,  Joško
+miš, kiša, škola, sluša, šišmiš, još,šal,više, 
 - Maša je u školi. U školi je i Jakša. On je našao Mašin šal. Jakša se smiješi Maši. Maša i Jakša se šale.
 t: Ante, Tanja, telefon, stol, sat, torta, lutka
 tata, Ante, tišina, mašta, lutka, sat, teta, Tomo, most, Tonka
@@ -73,11 +72,11 @@ tata, Ante, tišina, mašta, lutka, sat, teta, Tomo, most, Tonka
 p: Pčela, puž, leptir, pauk, pas, čarapa, prsten, štap
 pas, kapa, pismo, Josip, pjesma, pet, puno, Paula, upitnik, Stjepan
 - Paula pjeva. Stipe pita Paulu: - Komu pjevaš pjesmu?  Paško piše pismo. Pavao pita Paška: - Komu pišeš pismo?
-r: prozor, roda, Riki, Branka. riba, torta, mrav, raketa, traktor, krov, ruža
-rep, more, Marta, strina, vjetar, mir, Roko, krov, Petar, Marija
+r: prozor, roda, . riba, torta, mrav, raketa, traktor, krov, ruža
+rep, more, , strina, vjetar, mir, , krov, 
 - Što je Renato? Renato je šumar. Što je Ratko? Ratko je stolar. A Marko? On je slikar.
 b: bijeli balon, brijeg, bor, banana, bubamara, torba, bicikl, truba, zub, brod, bombon, riba
-bor, baka, bajka, jabuka, bubamaa, boja, soba, Boris, stablo, Branimir
+bor, baka, bajka, jabuka, bubamaa, boja, soba, stablo
 - Ja imam brata. Moj je brat Branko. Kupio mi je veliki balon. Bijele je boje. Balon leti visoko, visoko! Poletio je prema nebu. Balon postaje sve veći i veći.
 c:
 
@@ -86,8 +85,6 @@ otac                                                                            
 noć                                                                                                                                                                                                                                                                       kuća                                                                                                                                                                                                                                                                      sreća                                                                                                                                                                                                                                                                     lišće                                                                                                                                                                                                                                                                     povrće                                                                                                                                                                                                                                                                    ćuk                                                                                                                                                                                                                                                                       voće                                                                                                                                                                                                                                                                      Ćiro                                                                                                                                                                                                                                                                      pomoć                                                                                                                                                                                                                                                                     kolačić                                                                                                                                                                                                                                                                   Ovo je Ćirina kuća.                                                                                                                                                                                                                                                       Oko kuće raste cvijeće.                                                                                                                                                                                                                                                   Oko cvijeća lete leptirići.                                                                                                                                                                                                                                               Ptičice cvrkuću cijelo vrijeme.                                                                                                                                                                                                                                           Noću je mirno.                                                                                                                                                                                                                                                            Samo mali ćuk ćuče.
 vaza
 zvona
-Zlatko
-Zrinka
 zastava
 Zašto zmija puzi?
 Zašto je zmaj zelen?
@@ -105,12 +102,9 @@ Dobar dan!
 đak
 rođak
 anđeo
-Đurđica
 rođendan
 lađa
 svađa
-Anđelko
-Đurđica
 mađioničar
 Anđelko je vrijedan đak.
 Danas mu je rođendan.
@@ -129,14 +123,11 @@ Kolike se ovo pandže?
 
 ulje
 ljeto
-ljubica
 patuljak
 prijatelj
 kralj
 obitelj
-Ljiljana
 proljeće
-Miljenko
 Ljiljina je obitelj velika.
 Ima roditelje i dva brata.
 Ljubo je Ljiljin mlađi brat.
@@ -151,8 +142,6 @@ pašnjak
 sanjke
 mravinjak
 panj
-Janja
-Sanja
 svinje
 snješko
 Idem na zimovanje s roditeljima.
@@ -162,9 +151,13 @@ Moji prijatelji volje klizanje.
 Napravit ćemo snješka.
 Jedva čekam vidjeti Sanju.
 
-grm                                                                                                                                                                                                                                                                       igra                                                                                                                                                                                                                                                                      glazba                                                                                                                                                                                                                                                                    knjiga                                                                                                                                                                                                                                                                    jagoda                                                                                                                                                                                                                                                                    igla                                                                                                                                                                                                                                                                      Grgo                                                                                                                                                                                                                                                                      snijeg
-Gordana
-Gabrijela
+grm
+igra
+glazba
+knjiga
+jagoda
+igla
+snijeg
 U središtu grada nalazi se trgovina.
 U njoj ima svega.
 Na jednoj su polici igračke.
@@ -180,8 +173,6 @@ himna
 osmijeh
 šah
 hlače
-Helena
-Tihomir
 hobotnica
 U našoj je kuhinji živo.
 Pazimo na zdravu prehranu.
@@ -196,10 +187,6 @@ frula
 žirafa
 telefon
 fotografija
-Fani
-Filip
-Franka
-Franjo
 fotograf
 Franka je Filipova prijateljica.
 Nazvala ga je telefonom.
@@ -208,9 +195,4 @@ Naći će se pokraj semafora.
 Nakon toga idu u kino Frka.
 Gledat će film o životu žirafa.
 
-Emilija                                                                                                                                                                                                                                                                   Vlado                                                                                                                                                                                                                                                                     Zlata                                                                                                                                                                                                                                                                     Irma                                                                                                                                                                                                                                                                      Sanja                                                                                                                                                                                                                                                                     Goran                                                                                                                                                                                                                                                                     Mira
-Duško
-Borislava
-Bruno
-Milka
-Mladen
+
