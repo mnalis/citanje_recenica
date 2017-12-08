@@ -540,6 +540,8 @@ IMENICA1AS vjetar
 IMENICA1AS vlak
 IMENICA1AS zub
 IMENICA1AS život
+IMENICA1AS mrav
+IMENICA1AS kos
 
 
 PRIDJEV2A_E lijepe
@@ -564,8 +566,23 @@ IMENICA2A_E tepihe
 IMENICA2A_E cipele
 IMENICA2A_E miševe
 IMENICA2A_E stepenice
-
-
+IMENICA2A_E kocke
+IMENICA2A_E lutke
+IMENICA2A_E ribe
+IMENICA2A_E miševe
+IMENICA2A_E kišobrane
+IMENICA2A_E mrave
+IMENICA2A_E ovce
+IMENICA2A_E oči
+IMENICA2A_E breskve
+IMENICA2A_E udice
+IMENICA2A_E jabuke
+IMENICA2A_E mrlje
+IMENICA2A_E mame
+IMENICA2A_E čizme
+IMENICA2A_E novine
+IMENICA2A_E naočale
+IMENICA2A_E noge
 
 PRIDJEV2A_U dobru
 PRIDJEV2A_U zločestu
@@ -587,9 +604,14 @@ IMENICA2A_U vijaču
 IMENICA2A_U kocku
 IMENICA2A_U pernicu
 IMENICA2A_U kost
-
-
-
+IMENICA2A_U školu
+IMENICA2A_U šumicu
+IMENICA2A_U bojicu
+IMENICA2A_U učenicu
+IMENICA2A_U uru
+IMENICA2A_U njihaljku
+IMENICA2A_U kocku
+IMENICA2A_U udicu
 
 PRIDJEV2A_O plavo
 PRIDJEV2A_O zeleno
@@ -619,6 +641,7 @@ IMENICA2A_O uho
 IMENICA2A_O ulje
 IMENICA2A_O voće
 IMENICA2A_O zvono
+IMENICA2A_O cvijeće
 
 
 DAN ponedjeljak

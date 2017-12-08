@@ -1,69 +1,28 @@
-boja
-
-
-pet
-puno
-
-
-sluša
-još
-više
-
-
-
- šumica     slovo petica
-škola  učenica bojice šiljilo pisanke
-
-ura dječak djevojčica pas mačka krevet
 - dječak je u krevetu. pas nije u krevetu
-lopta vijača njihaljka bicikl
-- Luka ima loptu. Ema nema vijaču.
-igračke lopta kocke medo lutka
 - kocke su u košari. olovka i šiljilo nisu u košari.
 - volim crvenkapicu. ne volim vuka.
 semafor pješački prijelaz vozila prometni znak
 - ovo je semafor. ovo su auti.
 - konzerva je u moru. ribe su u ribarnici.
 - more je plavo. sunce je žuto. miš je siv.
-i: kiša, miš, kišobran
-a:  ,  šal, mrav
-o: , kos, , lopta, ovca, , oko, , 
-u: ura, , , uho, kuća, jabuka, , udica
-e:  ,  , jabuke,
-m: mrlja, ,
-mama, ima, Ema, imam, mi, ime,  me
-- Imam mamu. Mama im Emu. Mi imamo mamu.
-n: naočale. novine, noga, , , sunce, 
-na ona Nino nema mene on oni Nena Nina nemam
-- Mama ima Ninu. Ona nema Nenu. Neno ima mamu. Mama Neni: Ni-na, na-na!
-v: , , Ivan, sova, vrata
-ovo, Eva, novo, , novine, vi, Ivo Ivana, ovamo, 
-- Mama im Ivu. Ona nema novine. Eno Ive! Mama: Evo Ivone! Ivona: Evo mene i Ivana!
-k: kiša,
- , nekako, , kako, 
-- Koka: Ko! Ko! Ko! Kiki ima koku. Vinka ima mak. Mi nemamo vuka.
-j:   cvijeće, , , snijeg
-ja, moj, jaje,  jako, 
-- Vjeko ima uju. On ima ujnu. Ujna nema jaje. Janko: Evo moje mame! Ivanka: Moj je ujak jak.
-l: oblak, , livada, , sladoled, limun, 
-voli, limun, val, valovi,
-- Mama ima Lanu. Ona je Malena. Mama ima i Jelenu. Jelena jako voli mamu. Koliko one vole Nikolu?
-s: , srce, , , , mjesec,  nos, 
-, sol, jesen, sjajno, sama, slova, 
+i: o: u: - Imam mamu. Mama im Emu. Mi imamo mamu.
+n:.- Mama ima Ninu. Ona nema Nenu. Neno ima mamu. Mama Neni: Ni-na, na-na!
+v:- Mama im Ivu. Ona nema novine. Eno Ive! Mama: Evo Ivone! Ivona: Evo mene i Ivana!
+k:- Koka: Ko! Ko! Ko! Kiki ima koku. Vinka ima mak. Mi nemamo vuka.
+j:- Vjeko ima uju. On ima ujnu. Ujna nema jaje. Janko: Evo moje mame! Ivanka: Moj je ujak jak.
+l: - Mama ima Lanu. Ona je Malena. Mama ima i Jelenu. Jelena jako voli mamu. Koliko one vole Nikolu?
+s:  
 - Ja sam Jasna. Volim jesen. Ksenija je moja seka. Jasna i Ksenija se vesele. One se smiju.
-š: , miš, ,  Šime
-kiša, škola, sluša, još,više, 
+š: 
 - Maša je u školi. U školi je i Jakša. On je našao Mašin šal. Jakša se smiješi Maši. Maša i Jakša se šale.
 t: , 
-, lutka, 
 - Matko ima tajnu. Tajna je u kutiji. Matko je stavio kutiju na stol. Što je u kutiji? To je Matkova tajna.
-p: čarapa, prsten, 
-kapa,  Josip, pjesma, pet, puno
+p: 
+
 - Paula pjeva. Stipe pita Paulu: - Komu pjevaš pjesmu?  Paško piše pismo. Pavao pita Paška: - Komu pišeš pismo?
-r: , torta,  , ruža
+r:
 - Što je Renato? Renato je šumar. Što je Ratko? Ratko je stolar. A Marko? On je slikar.
-b: , banana, , 
-  boja, soba, 
+b:
 - Ja imam brata. Moj je brat Branko. Kupio mi je veliki balon. Bijele je boje. Balon leti visoko, visoko! Poletio je prema nebu. Balon postaje sve veći i veći.
 c:
 
@@ -76,12 +35,14 @@ Suncokret je okrenut prema Suncu.
 Ivica se smiješi Marici.
 
 
-       kuća sreća lišće povrće ćuk  Ćiro pomoć kolačić Ovo je Ćirina
-       kuća. Oko kuće raste cvijeće. Oko cvijeća lete leptirići. Ptičice
-       cvrkuću cijelo vrijeme. Noću je mirno. Samo mali ćuk ćuče.
 
-zvona
-zastava
+Ovo je Ćirina kuća. 
+Oko kuće raste cvijeće. 
+Oko cvijeća lete leptirići. 
+Ptičice cvrkuću cijelo vrijeme. 
+Noću je mirno. 
+Samo mali ćuk ćuče.
+
 Zašto zmija puzi?
 Zašto je zmaj zelen?
 Zašto zvono ne zvoni?
@@ -110,7 +71,6 @@ u vazi mirišu đurđice.
 Svi su iznenađeni.
 
 
-džudo
 Što se krije u džepu?
 Kakve je boje pidžama?
 Čiji je ovo džemper?
@@ -128,11 +88,7 @@ Jedva čekaju ljeto.
 Zajedno će tražiti najljepše školjke.
 
 
-pašnjak
-sanjke
-mravinjak
-panj
-svinje
+
 Idem na zimovanje s roditeljima.
 Oni najviše vole skijanje.
 Nosimo i nove sanjke.
@@ -140,8 +96,7 @@ Moji prijatelji volje klizanje.
 Napravit ćemo snješka.
 Jedva čekam vidjeti Sanju.
 
-grm
-snijeg
+
 U središtu grada nalazi se trgovina.
 U njoj ima svega.
 Na jednoj su polici igračke.
@@ -150,10 +105,7 @@ U kutu su dvije gitare.
 Još je mnogo toga u trgovini.
 
 
-kruh
-osmijeh
-šah
-hlače
+
 U našoj je kuhinji živo.
 Pazimo na zdravu prehranu.
 Tata kuha juhu od povrća.
@@ -162,8 +114,6 @@ Hana reže kruh
 Ja ću biti kuhar.
 
 
-film
-telefon
 Franka je Filipova prijateljica.
 Nazvala ga je telefonom.
 Danas će se zajedno fotografirati.
@@ -172,3 +122,122 @@ Nakon toga idu u kino Frka.
 Gledat će film o životu žirafa.
 
 
+
+
+
+
+
+
+
+
+ 
+  
+
+banana
+bicikl
+boja
+čarapa
+ćuk
+dječak
+djevojčica
+džudo
+film
+grm
+hlače
+igračke medo
+ima
+imam
+ime
+ja
+jabuka
+jako
+jesen
+još
+kako
+kapa
+kiša
+kolačić
+krevet
+kruh
+kuća
+limun
+lišće
+livada
+lopta
+lutka
+mačka
+mama
+me
+mene
+mi
+miš
+mjesec
+moj
+mravinjak
+na
+nekako
+nema
+nemam
+nos
+novine
+novo
+oblak
+oko
+on
+ona
+oni
+osmijeh
+ovamo
+ovca
+ovo
+panj
+pas
+pašnjak
+pet
+petica
+pjesma
+pomoć
+povrće
+prsten
+puno
+ruža
+sama
+sanjke
+sladoled
+slova
+slovo
+sluša
+snijeg
+soba
+sol
+sova
+sreća
+sunce
+svinje
+šah
+šiljilo pisanke
+škola
+telefon
+torta
+udica
+uho
+ura
+val
+valovi
+vi
+više
+voli
+vrata
+zastava
+zvona
+
+Nena
+Nina
+Nino
+Ćiro
+Ema
+Eva
+Ivan
+Ivo
+Ivana
+Josip
