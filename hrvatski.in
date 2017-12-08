@@ -156,6 +156,7 @@ IME1NM Božidar
 IME1NM Branimir
 IME1NM Branko
 IME1NM Bruno
+IME1NM Ćiro
 IME1NM Darko
 IME1NM David
 IME1NM Davor
@@ -209,6 +210,7 @@ IME1NM Mislav
 IME1NM Mladen
 IME1NM Neno
 IME1NM Nikola
+IME1NM Nino
 IME1NM Paško
 IME1NM Pavao
 IME1NM Perica
@@ -238,6 +240,7 @@ IME1NM Zlatko
 IME1NM Zvonko
 IME1NM Žarko
 IME1NM Živko
+
 
 
 IME1NZ Ana
@@ -284,7 +287,6 @@ IME1NZ Ksenija
 IME1NZ Lana
 IME1NZ Lorena
 IME1NZ Lucija
-IME1NZ Morana
 IME1NZ Luna
 IME1NZ Ljerka
 IME1NZ Ljiljana
@@ -303,6 +305,7 @@ IME1NZ Mira
 IME1NZ Mirjana
 IME1NZ Mirna
 IME1NZ Mirta
+IME1NZ Morana
 IME1NZ Nena
 IME1NZ Nevena
 IME1NZ Nikol
@@ -316,8 +319,8 @@ IME1NZ Sara
 IME1NZ Senka
 IME1NZ Slavica
 IME1NZ Štefica
-IME1NZ Tara
 IME1NZ Tanja
+IME1NZ Tara
 IME1NZ Tatjana
 IME1NZ Tihana
 IME1NZ Tonka
@@ -329,7 +332,6 @@ IME1NZ Zdravka
 IME1NZ Zlata
 IME1NZ Zrinka
 IME1NZ Zvjezdana
-
 
 
 IMENICA2N mame
@@ -622,6 +624,7 @@ PRIDJEV2A_O crveno
 PRIDJEV2A_O mirno
 PRIDJEV2A_O mekano
 PRIDJEV2A_O tvrdo
+PRIDJEV2A_O sjajno
 
 IMENICA2A_O drvce
 IMENICA2A_O drvo
@@ -642,7 +645,7 @@ IMENICA2A_O ulje
 IMENICA2A_O voće
 IMENICA2A_O zvono
 IMENICA2A_O cvijeće
-
+IMENICA2A_O srce
 
 DAN ponedjeljak
 DAN utorak
