@@ -241,3 +241,10 @@ sama
 sluša
 više
 voli
+
+
+
+FIXME:
+IMENICA2A_U ne valja, nisu to mnozine?? i PRIDJEV2A_U onda isto...
+to je IMENICA1AZ zapravo?? (npr. koga?što? vijaču...)
+vidi im općenito množine da li mi pašu...
