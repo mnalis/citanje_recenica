@@ -1,14 +1,8 @@
 boja
 
-rep
-vjetar
-mir
-krov
 
-pismo
 pet
 puno
-upitnik
 
 
 sluša
@@ -17,9 +11,9 @@ više
 
 
 
-drvo šumica kamen kućica listić knjižica slovo petica
-škola učenik učenica torba pernica bojice šiljilo pisanke olovka
-školska klupa
+ šumica     slovo petica
+škola  učenica bojice šiljilo pisanke
+
 ura dječak djevojčica pas mačka krevet
 - dječak je u krevetu. pas nije u krevetu
 lopta vijača njihaljka bicikl
@@ -31,53 +25,61 @@ semafor pješački prijelaz vozila prometni znak
 - ovo je semafor. ovo su auti.
 - konzerva je u moru. ribe su u ribarnici.
 - more je plavo. sunce je žuto. miš je siv.
-i: kiša, miš, kišobran, riba, Ivo, igla
-a:  auto, semafor, olovka, šal, mrav
-o: oblak, kos, voda, , lopta, ovca, slon, oko, ormar, balon, zvono, olovka, sladoled, oblak
-u: ura, lunjo, jastuk, , uho, kuća, puž, jabuka, kruh udica, vuk
-e: električar, svjetlo,  krevet, jabuke, , vjeverica
-m: mačka, miš, mrlja, ormar, mjesec, majmun, pismo, eskim, mrav
+i: kiša, miš, kišobran
+a:  ,  šal, mrav
+o: , kos, , lopta, ovca, , oko, , 
+u: ura, , , uho, kuća, jabuka, , udica
+e:  ,  , jabuke,
+m: mrlja, ,
 mama, ima, Ema, imam, mi, ime,  me
 - Imam mamu. Mama im Emu. Mi imamo mamu.
-n: naočale. novine, noga, unuka, nos, zvono, slon, suce, kišobran, lonac, banana, paun, noj, nosorog
+n: naočale. novine, noga, , , sunce, 
 na ona Nino nema mene on oni Nena Nina nemam
 - Mama ima Ninu. Ona nema Nenu. Neno ima mamu. Mama Neni: Ni-na, na-na!
-v: vlak, lokomotiva, vagon, Ivan, sova vrata, cvijet, zvijezda vrana, krov, Ivan, vaza
-ovo, Eva, novo, neven, novine, vi, Ivo Ivana, ovamo, 
+v: , , Ivan, sova, vrata
+ovo, Eva, novo, , novine, vi, Ivo Ivana, ovamo, 
 - Mama im Ivu. Ona nema novine. Eno Ive! Mama: Evo Ivone! Ivona: Evo mene i Ivana!
-k: koka,  krava, jabuka, kruška. oko, kapa, patka, rak, kiša, konj, lokomotiva
-koka, vuk, kuna, kamen, nekako, mak, kako, mekano
+k: kiša,
+ , nekako, , kako, 
 - Koka: Ko! Ko! Ko! Kiki ima koku. Vinka ima mak. Mi nemamo vuka.
-j: jabuka, zmaj,  cvijeće, jež, , jaje, snijeg, jagoda
-ja, ujo, moj, jaje, majka, noj, jako, ujna, 
+j:   cvijeće, , , snijeg
+ja, moj, jaje,  jako, 
 - Vjeko ima uju. On ima ujnu. Ujna nema jaje. Janko: Evo moje mame! Ivanka: Moj je ujak jak.
-l: oblak, leptir, pčela, livada, telefon, sladoled, mobitel, lav, balon, limun, lisica, slon
-lav, vila, voli, jelen, limun, val, Lana, Jelena, valovi olovka
-- Mama ima Lanu. Ona je Malena. Mama ima i Jelenu. Jelenna jako voli mamu. Koliko one vole Nikolu?
-s: sunce, srce, slavuj, strašilo, slon, mjesec, sova, nos, srce, kos, semafor, kost
-sok, kosa, sol, jesen, sjajno sama, slova, , maslina
+l: oblak, , livada, , sladoled, limun, 
+voli, limun, val, valovi,
+- Mama ima Lanu. Ona je Malena. Mama ima i Jelenu. Jelena jako voli mamu. Koliko one vole Nikolu?
+s: , srce, , , , mjesec,  nos, 
+, sol, jesen, sjajno, sama, slova, 
 - Ja sam Jasna. Volim jesen. Ksenija je moja seka. Jasna i Ksenija se vesele. One se smiju.
-š: šuma, kiša, lišće, miš, šal, šešir, kruška, Šime, kiša, šišmiš
-miš, kiša, škola, sluša, šišmiš, još,šal,više, 
+š: , miš, ,  Šime
+kiša, škola, sluša, još,više, 
 - Maša je u školi. U školi je i Jakša. On je našao Mašin šal. Jakša se smiješi Maši. Maša i Jakša se šale.
-t: Ante, Tanja, telefon, stol, sat, torta, lutka
-tata, Ante, tišina, mašta, lutka, sat, teta, Tomo, most, Tonka
+t: , 
+, lutka, 
 - Matko ima tajnu. Tajna je u kutiji. Matko je stavio kutiju na stol. Što je u kutiji? To je Matkova tajna.
-p: Pčela, puž, leptir, pauk, pas, čarapa, prsten, štap
-pas, kapa, pismo, Josip, pjesma, pet, puno, Paula, upitnik, Stjepan
+p: čarapa, prsten, 
+kapa,  Josip, pjesma, pet, puno
 - Paula pjeva. Stipe pita Paulu: - Komu pjevaš pjesmu?  Paško piše pismo. Pavao pita Paška: - Komu pišeš pismo?
-r: prozor, roda, . riba, torta, mrav, raketa, traktor, krov, ruža
-rep, more, , strina, vjetar, mir, , krov, 
+r: , torta,  , ruža
 - Što je Renato? Renato je šumar. Što je Ratko? Ratko je stolar. A Marko? On je slikar.
-b: bijeli balon, brijeg, bor, banana, bubamara, torba, bicikl, truba, zub, brod, bombon, riba
-bor, baka, bajka, jabuka, bubamaa, boja, soba, stablo
+b: , banana, , 
+  boja, soba, 
 - Ja imam brata. Moj je brat Branko. Kupio mi je veliki balon. Bijele je boje. Balon leti visoko, visoko! Poletio je prema nebu. Balon postaje sve veći i veći.
 c:
 
 
-otac                                                                                                                                                                                                                                                                      srce                                                                                                                                                                                                                                                                      sunce                                                                                                                                                                                                                                                                     cvijet                                                                                                                                                                                                                                                                    mjesec                                                                                                                                                                                                                                                                    crkva                                                                                                                                                                                                                                                                     Lucij                                                                                                                                                                                                                                                                     stric                                                                                                                                                                                                                                                                     ptica                                                                                                                                                                                                                                                                     suncokret                                                                                                                                                                                                                                                                 Olovka stanuje u pernici.                                                                                                                                                                                                                                                 Slova caruju u slikovnici.                                                                                                                                                                                                                                                Leptir mašta o cvijetu.                                                                                                                                                                                                                                                   Ptica leti prema šumici.                                                                                                                                                                                                                                                  Suncokret je okrenut prema Suncu.                                                                                                                                                                                                                                         Ivica se smiješi Marici.
-noć                                                                                                                                                                                                                                                                       kuća                                                                                                                                                                                                                                                                      sreća                                                                                                                                                                                                                                                                     lišće                                                                                                                                                                                                                                                                     povrće                                                                                                                                                                                                                                                                    ćuk                                                                                                                                                                                                                                                                       voće                                                                                                                                                                                                                                                                      Ćiro                                                                                                                                                                                                                                                                      pomoć                                                                                                                                                                                                                                                                     kolačić                                                                                                                                                                                                                                                                   Ovo je Ćirina kuća.                                                                                                                                                                                                                                                       Oko kuće raste cvijeće.                                                                                                                                                                                                                                                   Oko cvijeća lete leptirići.                                                                                                                                                                                                                                               Ptičice cvrkuću cijelo vrijeme.                                                                                                                                                                                                                                           Noću je mirno.                                                                                                                                                                                                                                                            Samo mali ćuk ćuče.
-vaza
+Olovka stanuje u pernici.
+Slova caruju u slikovnici.
+Leptir mašta o cvijetu.
+Ptica leti prema šumici.
+Suncokret je okrenut prema Suncu.
+Ivica se smiješi Marici.
+
+
+       kuća sreća lišće povrće ćuk  Ćiro pomoć kolačić Ovo je Ćirina
+       kuća. Oko kuće raste cvijeće. Oko cvijeća lete leptirići. Ptičice
+       cvrkuću cijelo vrijeme. Noću je mirno. Samo mali ćuk ćuče.
+
 zvona
 zastava
 Zašto zmija puzi?
@@ -87,19 +89,19 @@ Zašto zima nema zube?
 Zašto, zašto?
 Eto zato!
 
-puž                                                                                                                                                                                                                                                                       žuta                                                                                                                                                                                                                                                                      ruža                                                                                                                                                                                                                                                                      život                                                                                                                                                                                                                                                                     mreža                                                                                                                                                                                                                                                                     jež                                                                                                                                                                                                                                                                       žena                                                                                                                                                                                                                                                                      Božić                                                                                                                                                                                                                                                                     Živko                                                                                                                                                                                                                                                                     Božidar                                                                                                                                                                                                                                                                   Uskoro će Božić.                                                                                                                                                                                                                                                          Žarko mu se veseli.                                                                                                                                                                                                                                                       U vrtu je božićno drvce.                                                                                                                                                                                                                                                  Okićeno je žutim ukrasima.                                                                                                                                                                                                                                                Žarko, što želiš za Božić?                                                                                                                                                                                                                                                Želim svima sretan Božić.
+žuta ruža  mreža jež žena Božić  
+Uskoro će Božić. 
+Žarko mu se veseli. 
+U vrtu je božićno drvce. 
+Okićeno je žutim ukrasima. 
+Žarko, što želiš za Božić? 
+Želim svima sretan Božić.
+
 Idu zajedno u prvi razred.
 Zajedno provode veliki odmor.
 U školskom se dvorištu često pozdrave
 Dobar dan!
 
-đak
-rođak
-anđeo
-rođendan
-lađa
-svađa
-mađioničar
 Anđelko je vrijedan đak.
 Danas mu je rođendan.
 Pozvao je Đurđu i Anđelu.
@@ -108,20 +110,16 @@ u vazi mirišu đurđice.
 Svi su iznenađeni.
 
 
-džep                                                                                                                                                                                                                                                                      džem                                                                                                                                                                                                                                                                      pidžama                                                                                                                                                                                                                                                                   udžbenik                                                                                                                                                                                                                                                                  džip                                                                                                                                                                                                                                                                      pandža                                                                                                                                                                                                                                                                    džudo                                                                                                                                                                                                                                                                     džemper                                                                                                                                                                                                                                                                   Što se krije u džepu?                                                                                                                                                                                                                                                     Kakve je boje pidžama?                                                                                                                                                                                                                                                    Čiji je ovo džemper?
+džudo
+Što se krije u džepu?
+Kakve je boje pidžama?
+Čiji je ovo džemper?
 Tko vozi džip?
 Je li džem sladak?
 Čiji je udžbenik?
 Kolike se ovo pandže?
 
 
-ulje
-ljeto
-patuljak
-prijatelj
-kralj
-obitelj
-proljeće
 Ljiljina je obitelj velika.
 Ima roditelje i dva brata.
 Ljubo je Ljiljin mlađi brat.
@@ -130,14 +128,11 @@ Jedva čekaju ljeto.
 Zajedno će tražiti najljepše školjke.
 
 
-konj
-janje
 pašnjak
 sanjke
 mravinjak
 panj
 svinje
-snješko
 Idem na zimovanje s roditeljima.
 Oni najviše vole skijanje.
 Nosimo i nove sanjke.
@@ -146,11 +141,6 @@ Napravit ćemo snješka.
 Jedva čekam vidjeti Sanju.
 
 grm
-igra
-glazba
-knjiga
-jagoda
-igla
 snijeg
 U središtu grada nalazi se trgovina.
 U njoj ima svega.
@@ -160,14 +150,10 @@ U kutu su dvije gitare.
 Još je mnogo toga u trgovini.
 
 
-uho
 kruh
-hrana
-himna
 osmijeh
 šah
 hlače
-hobotnica
 U našoj je kuhinji živo.
 Pazimo na zdravu prehranu.
 Tata kuha juhu od povrća.
@@ -177,11 +163,7 @@ Ja ću biti kuhar.
 
 
 film
-frula
-žirafa
 telefon
-fotografija
-fotograf
 Franka je Filipova prijateljica.
 Nazvala ga je telefonom.
 Danas će se zajedno fotografirati.
