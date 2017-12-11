@@ -745,3 +745,6 @@ DAN subota
 DAN nedjelja
 DAN Božić
 DAN Uskrs
+# kludge za "uskoro će"
+DAN pasti noć
+DAN svanuti
