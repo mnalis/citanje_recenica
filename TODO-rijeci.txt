@@ -123,76 +123,6 @@ Gledat će film o životu žirafa.
 
 
 
-
-
-
-
-
-
-
- 
-DOBRA/PLAVA/PRLJAVA/ZELENA...:  (nemamo jos?)
-banana
-boja
-djevojčica
-jesen
-kapa
-kiša
-kuća
-livada
-lopta
-lutka
-mačka
-mama
-ovca
-petica
-pjesma
-pomoć
-ruža
-slova
-soba
-sol
-sova
-sreća
-škola
-torta
-udica
-ura
-vrata
-zastava
-zvona
-čarapa
-jabuka
-
-DOBRI/PLAVI/PRLJAVI/ZELENI...:
-bicikl
-ćuk
-džudo
-film
-grm
-medo
-krevet
-kruh
-limun
-miš
-mjesec
-mravinjak
-nos
-oblak
-osmijeh
-panj
-pas
-pašnjak
-prsten
-sladoled
-snijeg
-telefon
-val
-valovi
-kolačić
-šah
-
-
 RAZNO:
 vi
 ima
@@ -214,7 +144,10 @@ puno
 sama
 sluša
 više
-voli
+
+slova
+vrata
+zvona
 
 
 
