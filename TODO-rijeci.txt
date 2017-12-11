@@ -167,12 +167,10 @@ jabuka
 DOBRI/PLAVI/PRLJAVI/ZELENI...:
 bicikl
 ćuk
-dječak
 džudo
 film
 grm
 medo
-ja
 krevet
 kruh
 limun
@@ -195,39 +193,15 @@ kolačić
 šah
 
 
-
-PLAVE/DOBRE/PRLJAVE/ZELENE...:
-hlače
-igračke
-novine
-sanjke
-svinje
-pisanke
-
-
-PLAVO/DOBRO/PRVLJAVO/ZELENO...:
-ime
-lišće
-oko
-povrće
-slovo
-sunce
-šiljilo
-uho
-
-
-
 RAZNO:
 vi
 ima
 imam
-jako
 još
 kako
 me
 mene
 mi
-moj
 na
 nekako
 nema
@@ -246,5 +220,7 @@ voli
 
 FIXME:
 IMENICA2A_U ne valja, nisu to mnozine?? i PRIDJEV2A_U onda isto...
+i IMENICA2A_O cvijeće je mnozina, ali drvce i drvo nisu...
+
 to je IMENICA1AZ zapravo?? (npr. koga?što? vijaču...)
 vidi im općenito množine da li mi pašu...
