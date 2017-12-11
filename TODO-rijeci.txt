@@ -157,3 +157,6 @@ i IMENICA2A_O cvijeće je mnozina, ali drvce i drvo nisu...
 
 to je IMENICA1AZ zapravo?? (npr. koga?što? vijaču...)
 vidi im općenito množine da li mi pašu...
+
+FIXME strgano:
+"Čiji Roko ima jako dobar slikar?" 
