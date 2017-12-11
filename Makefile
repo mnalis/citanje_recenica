@@ -5,7 +5,7 @@ check: hrvatski.in
 	@./dictcheck.pl $<
 
 publish: check
-	git commit -a
+	git commit -a || true
 	git push
 
 update:
