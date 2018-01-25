@@ -33,8 +33,12 @@
 + random dodavanje '!' ili '.'
 + KONSTRUKCIJE pametniji parser, da slici vise na REGEXP umjesto ogromne liste
 
-- fix razlika "nj" i "n"+"j" (kod odabira naucenih slova) (npr. tanjur)
+-- fix razlika "nj" i "n"+"j" (kod odabira naucenih slova) (npr. tanjur)
 - convert to JS u single HTML?
 - prijaviti na http://www.skole.hr/nastavni-materijali/ukljucite-se ?
 - pametniji odabir naučenih slova - scigen kako? $fd_in da je output od "grep xxxx" ?
 - mozda dodati scoring koliko je recenica dobro procitano?
+
+
+- skola: Formalno pismo hrvatskog slovopisa možemo koristiti samo preko Slovopisa (ŠK). Neka onda font bude Arial.
+- skola: U prilogu šaljem fotografije njihovih izuma slova (jer još nisam sve skenirala). Tijekom dana poslat ću Vam još fotografije za tri učenika.
