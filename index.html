@@ -11,6 +11,20 @@ textarea { vertical-align: middle; }
 #submit { font-size: x-large }
 .c_default { cursor: default; }
 .c_progress { cursor: progress; }
+
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+#bg_image {
+    height:100%;
+}
+
 </style>
 
 <script>
@@ -41,7 +55,8 @@ function doAsyncUpdate() {
 function loadImg(name) {
 	'use strict';
 	var url="images/" + name + ".jpg";
-	document.getElementById("pozadina").src = url;
+	//document.getElementById('sadrzaj').style.backgroundImage = 'url(' + url + ')';
+        document.getElementById('bg_image').src = url;
 }
 
 function loadImgNaslov() {
@@ -64,7 +79,12 @@ function loadImgMust() {
 
 </head>
 
-<body onLoad="loadImgNaslov();">
+<body>
+<!-- <body onLoad="loadImgNaslov();"> -->
+    <div id="background">
+        <img src="images/naslovnica2.jpg" id="bg_image">
+    </div>
+    <div id="sadrzaj">
 	<h1>Čitanje rečenica</h1>
 	<p>Ovaj web alat je namjenjen učenicima prvih razreda, kako bi mogli ponavljati čitanje slova koja su naučili. <br>
 	Napravljen je zato, jer su rečenice iz knjige klinci već naučili napamet pa ih više ne čitaju nego recitiraju iz glave &#9786;
@@ -88,11 +108,11 @@ function loadImgMust() {
 		<input type=submit id=submit class="c_default" value="Generiraj novu rečenicu!">
 	</form>
 
-	<img src="images/default.jpg" id="pozadina" width="100%">
 	<footer>
 		<p>Ovo je slobodan softver, predložite izmjene na mnalis-skole&#64;voyager&#46;hr (ili ih <A HREF="https://github.com/mnalis/citanje_recenica">sami napravite</A>!)</p>
 		Autori: Matija Nalis; Marin Klojber, učenik 1.c<br>
 		Suradnici: Mali izumitelji 1.c produženog boravka O.Š. Voltino
 	</footer>
+   </div>
 </body>
 </html>
