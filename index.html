@@ -49,11 +49,22 @@ function loadImgNaslov() {
 	var i=Math.floor(Math.random() * 2) + 1;
 	loadImg("naslovnica"+i);
 }
+
+function loadImgMust() {
+	'use strict';
+	var letter=document.getElementById("must").value.toLowerCase();
+	var has_alt=/[m]/;
+	var i="";
+	if (has_alt.test(letter)) {
+		i = Math.floor(Math.random() * 2) + 1;
+	}
+	loadImg(letter + i);
+}
 </script>
 
 </head>
 
-<body onLoad="loadImgNaslov()">
+<body onLoad="loadImgNaslov();">
 	<h1>Čitanje rečenica</h1>
 	<p>Ovaj web alat je namjenjen učenicima prvih razreda, kako bi mogli ponavljati čitanje slova koja su naučili. <br>
 	Napravljen je zato, jer su rečenice iz knjige klinci već naučili napamet pa ih više ne čitaju nego recitiraju iz glave &#9786;
@@ -63,7 +74,7 @@ function loadImgNaslov() {
 			<input type=text name="letters" id="letters" value="iaouemnvkjlsštprbcčćzždđghf" maxlength=27 size=27>
 		</label>
 		<label>(Obavezno slovo: 
-			<input type="text" name="must" id="must" maxlength=2 size=2 pattern="[abcćčdđefghijklmnoprsštuvzžABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ]?j?" title="Opcionalno, ako želimo da rečenica MORA imati neko slovo">)
+			<input type="text" name="must" id="must" maxlength=2 size=2 pattern="[abcćčdđefghijklmnoprsštuvzžABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ]?j?" title="Opcionalno, ako želimo da rečenica MORA imati neko slovo" onChange="loadImgMust();">)
 		</label>
 		<br>
 		<label>Koristiti SAMO VELIKA slova?
