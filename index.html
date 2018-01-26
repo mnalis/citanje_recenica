@@ -71,8 +71,13 @@ function loadImgNaslov() {
 
 function loadImgLetter(letter) {
 	'use strict';
+	//alert ("loading letter " + letter.charCodeAt(0) + " " + letter.charCodeAt(1) + " = " + letter);
+	if (letter.charCodeAt(0) == 263) { letter = 'cc'; }
+	if (letter.charCodeAt(0) == 269) { letter = 'ch'; }
+	if (letter.charCodeAt(0) == 273) { letter = 'dj'; }
+	if (letter.charCodeAt(0) == 100 and letter.charCodeAt(1) == 382) { letter = 'dz'; }
 	if (letter.charCodeAt(0) == 353) { letter = 'sh'; }
-	//alert ("loading letter " + letter.charCodeAt(0) + " = " + letter);
+	if (letter.charCodeAt(0) == 382) { letter = 'zh'; }
 
 	var has_alt=/[m]/;
 	var i="";
