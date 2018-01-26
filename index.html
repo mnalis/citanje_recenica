@@ -13,19 +13,23 @@ textarea { vertical-align: middle; }
 .c_progress { cursor: progress; }
 
 #slika {
-    width: 480px; 
+    max-width: 480px;
+    width: 30%;
     display: table-cell; 
+    text-align: right;
+    background-color: red;
 }
 
 #slika_img {
     width: 100%;
+    max-width: 480px;
 }
 
 .sadrzaj { display: table; width 100%; }
-.tekst {display: table-cell; vertical-align: top; }
+.tekst {display: table-cell; vertical-align: top; background-color: cyan;}
 
 @media all and (max-width: 1360px) {
-  #slika, .sadrzaj, .tekst {float: none; margin-bottom: 5px; display: block; }
+  #slika, .sadrzaj, .tekst {float: none; margin-bottom: 5px; display: block; width: 100%; }
 }
 </style>
 
