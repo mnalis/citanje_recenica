@@ -12,21 +12,18 @@ textarea { vertical-align: middle; }
 .c_default { cursor: default; }
 .c_progress { cursor: progress; }
 
-#background {
-    width: 100%; 
-    height: 100%; 
-    position: fixed; 
-    left: 0px; 
-    top: 0px; 
-    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+#slika {
+    width: 480px; 
+    display: table-cell; 
+    background-color: cyan;
 }
 
-#bg_image {
-    position: fixed;
-    right: 0px;
-    height: 100%;
-    opacity: 0.7;
+#slika_img {
+    width: 100%;
 }
+
+.sadrzaj { display: table; width 100%; }
+.tekst {display: table-cell; vertical-align: top; background: pink; }
 
 </style>
 
@@ -58,7 +55,6 @@ function doAsyncUpdate() {
 function loadImg(name) {
 	'use strict';
 	var url="images/" + name + ".jpg";
-	//document.getElementById('sadrzaj').style.backgroundImage = 'url(' + url + ')';
         document.getElementById('bg_image').src = url;
 }
 
@@ -83,39 +79,43 @@ function loadImgMust() {
 </head>
 
 <body>
-<!-- <body onLoad="loadImgNaslov();"> -->
-    <div id="background">
-        <img src="images/naslovnica2.jpg" id="bg_image">
-    </div>
-    <div id="sadrzaj">
-	<h1>Čitanje rečenica</h1>
-	<p>Ovaj web alat je namjenjen učenicima prvih razreda, kako bi mogli ponavljati čitanje slova koja su naučili. <br>
-	Napravljen je zato, jer su rečenice iz knjige klinci već naučili napamet pa ih više ne čitaju nego recitiraju iz glave &#9786;
-	</p>
-	<form action="citaj.cgi" method=GET onSubmit="return doAsyncUpdate();">
-		<label>Naučena slova:
-			<input type=text name="letters" id="letters" value="iaouemnvkjlsštprbcčćzždđghf" maxlength=27 size=27>
-		</label>
-		<label>(Obavezno slovo: 
-			<input type="text" name="must" id="must" maxlength=2 size=2 pattern="[abcćčdđefghijklmnoprsštuvzžABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ]?j?" title="Opcionalno, ako želimo da rečenica MORA imati neko slovo" onChange="loadImgMust();">)
-		</label>
-		<br>
-		<label>Koristiti SAMO VELIKA slova?
-			<input type="checkbox" name="upcase" id="upcase" value="1">
-		</label>
-		<p>
-		<h2><label>Rečenica:
-			<input type=text value="klikni niže!" id=odgovor disabled>
-		</label></h2>
-		<p>
-		<input type=submit id=submit class="c_default" value="Generiraj novu rečenicu!">
-	</form>
+<!-- FIXME <body onLoad="loadImgNaslov();"> -->
+        <div id="sadrzaj">
+              <div class="tekst">
+                  <h1>Čitanje rečenica</h1>
+                  <p>Ovaj web alat je namjenjen učenicima prvih razreda, kako bi mogli ponavljati čitanje slova koja su naučili. <br>
+                  Napravljen je zato, jer su rečenice iz knjige klinci već naučili napamet pa ih više ne čitaju nego recitiraju iz glave &#9786;
+                  </p>
+                  <form action="citaj.cgi" method=GET onSubmit="return doAsyncUpdate();">
+                          <label>Naučena slova:
+                                  <input type=text name="letters" id="letters" value="iaouemnvkjlsštprbcčćzždđghf" maxlength=27 size=27>
+                          </label>
+                          <label>(Obavezno slovo: 
+                                  <input type="text" name="must" id="must" maxlength=2 size=2 pattern="[abcćčdđefghijklmnoprsštuvzžABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ]?j?" title="Opcionalno, ako želimo da rečenica MORA imati neko slovo" onChange="loadImgMust();">)
+                          </label>
+                          <br>
+                          <label>Koristiti SAMO VELIKA slova?
+                                  <input type="checkbox" name="upcase" id="upcase" value="1">
+                          </label>
+                          <p>
+                          <h2><label>Rečenica:
+                                  <input type=text value="klikni niže!" id=odgovor disabled>
+                          </label></h2>
+                          <p>
+                          <input type=submit id=submit class="c_default" value="Generiraj novu rečenicu!">
+                  </form>
+              </div>
+
+              <div id="slika">
+                  <!-- <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" id="slika_img"> -->
+                  <img src="images/480_naslovnica1.jpg" width=480 alt="" id="slika_img">
+              </div>
+        </div>
 
 	<footer>
 		<p>Ovo je slobodan softver, predložite izmjene na mnalis-skole&#64;voyager&#46;hr (ili ih <A HREF="https://github.com/mnalis/citanje_recenica">sami napravite</A>!)</p>
 		Autori: Matija Nalis; Marin Klojber, učenik 1.c<br>
 		Suradnici: Mali izumitelji 1.c produženog boravka O.Š. Voltino
 	</footer>
-   </div>
 </body>
 </html>
