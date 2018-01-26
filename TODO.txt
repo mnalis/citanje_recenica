@@ -44,5 +44,4 @@
 - skola: U prilogu šaljem fotografije njihovih izuma slova (jer još nisam sve skenirala). Tijekom dana poslat ću Vam još fotografije za tri učenika.
 
 - maybe: napravi slike da su "float: right; width: 480px;" i da sve stima bez CSS @media conditionala
-- fix slovo "dž" od dva znaka (javascript validate, javascript picture generator i perl)
 - slika na mobitelu sa ekranom manjim od 480px sada sa slikama stavlja scroll; fix that !
