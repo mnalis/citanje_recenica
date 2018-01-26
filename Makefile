@@ -5,6 +5,7 @@ check: hrvatski.in
 	@./dictcheck.pl $<
 
 publish: check
+	perl -wTc citaj.cgi
 	git commit -a || true
 	git push
 
