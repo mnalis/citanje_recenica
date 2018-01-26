@@ -69,15 +69,23 @@ function loadImgNaslov() {
 	loadImg("naslovnica"+i);
 }
 
-function loadImgMust() {
+function loadImgLetter(letter) {
 	'use strict';
-	var letter=document.getElementById("must").value.toLowerCase();
+	if (letter.charCodeAt(0) == 353) { letter = 'sh'; }
+	//alert ("loading letter " + letter.charCodeAt(0) + " = " + letter);
+
 	var has_alt=/[m]/;
 	var i="";
 	if (has_alt.test(letter)) {
 		i = Math.floor(Math.random() * 2) + 1;
 	}
+
 	loadImg(letter + i);
+}
+
+function loadImgMust() {
+	'use strict';
+	loadImgLetter (document.getElementById("must").value.toLowerCase());
 }
 </script>
 
@@ -95,7 +103,7 @@ function loadImgMust() {
                                   <input type=text name="letters" id="letters" value="iaouemnvkjlsštprbcčćzždđghf" maxlength=27 size=27>
                           </label>
                           <label>(Obavezno slovo: 
-                                  <input type="text" name="must" id="must" maxlength=2 size=2 pattern="[abcćčdđefghijklmnoprsštuvzžABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ]?j?" title="Opcionalno, ako želimo da rečenica MORA imati neko slovo" onChange="loadImgMust();">)
+                                  <input type="text" name="must" id="must" maxlength=2 size=2 pattern="^[abcćčdđefghijklmnoprsštuvzžABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ]?j?$" title="Opcionalno, ako želimo da rečenica MORA imati neko slovo" onChange="loadImgMust();">)
                           </label>
                           <br>
                           <label>Koristiti SAMO VELIKA slova?

@@ -44,4 +44,3 @@
 - skola: U prilogu šaljem fotografije njihovih izuma slova (jer još nisam sve skenirala). Tijekom dana poslat ću Vam još fotografije za tri učenika.
 
 - maybe: napravi slike da su "float: right; width: 480px;" i da sve stima bez CSS @media conditionala
-- fix slova da ona koja nemamo koriste symlink na naslovnicu; fix slova "lj", "nj" i "sh", "ch" , ...
