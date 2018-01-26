@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<title>Generator rečenica za prvašiće</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+textarea { vertical-align: middle; }
+#odgovor { background: #0000C2; color: #FFCE7F; font-size: x-large; width: 99%; font-family: Arial,Helvetica,sans-serif; }
+#submit { font-size: x-large }
+.c_default { cursor: default; }
+.c_progress { cursor: progress; }
+
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+#bg_image {
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    opacity: 0.7;
+}
+
+</style>
+
+<script>
+function doAsyncUpdate() {
+	'use strict';
+
+	document.getElementById('submit').className = "c_progress";
+	var letters = document.getElementById('letters').value;
+	var must = document.getElementById('must').value;
+	var upcase = document.getElementById('upcase').checked ? 1 : 0;
+	//alert ("upcase=" + upcase + "\nletters=" + letters);
+
+	var xreq = new XMLHttpRequest();
+	xreq.onreadystatechange = function() {
+		if (xreq.readyState == XMLHttpRequest.DONE && xreq.status == 200) {
+			document.getElementById("odgovor").value = xreq.responseText;
+			document.getElementById('submit').className = "c_default";
+		}
+	};
+	var url="citaj.cgi?upcase=" + upcase + ";letters=" + letters;
+	if (must) { url += ";must=" + must };
+	//alert ("url="+url);
+	xreq.open("GET", url, true);
+	xreq.send();
+	return false;
+}
+
+function loadImg(name) {
+	'use strict';
+	var url="images/" + name + ".jpg";
+	//document.getElementById('sadrzaj').style.backgroundImage = 'url(' + url + ')';
+        document.getElementById('bg_image').src = url;
+}
+
+function loadImgNaslov() {
+	'use strict';
+	var i=Math.floor(Math.random() * 2) + 1;
+	loadImg("naslovnica"+i);
+}
+
+function loadImgMust() {
+	'use strict';
+	var letter=document.getElementById("must").value.toLowerCase();
+	var has_alt=/[m]/;
+	var i="";
+	if (has_alt.test(letter)) {
+		i = Math.floor(Math.random() * 2) + 1;
+	}
+	loadImg(letter + i);
+}
+</script>
+
+</head>
+
+<body>
+<!-- <body onLoad="loadImgNaslov();"> -->
+    <div id="background">
+        <img src="images/naslovnica2.jpg" id="bg_image">
+    </div>
+    <div id="sadrzaj">
+	<h1>Čitanje rečenica</h1>
+	<p>Ovaj web alat je namjenjen učenicima prvih razreda, kako bi mogli ponavljati čitanje slova koja su naučili. <br>
+	Napravljen je zato, jer su rečenice iz knjige klinci već naučili napamet pa ih više ne čitaju nego recitiraju iz glave &#9786;
+	</p>
+	<form action="citaj.cgi" method=GET onSubmit="return doAsyncUpdate();">
+		<label>Naučena slova:
+			<input type=text name="letters" id="letters" value="iaouemnvkjlsštprbcčćzždđghf" maxlength=27 size=27>
+		</label>
+		<label>(Obavezno slovo: 
+			<input type="text" name="must" id="must" maxlength=2 size=2 pattern="[abcćčdđefghijklmnoprsštuvzžABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ]?j?" title="Opcionalno, ako želimo da rečenica MORA imati neko slovo" onChange="loadImgMust();">)
+		</label>
+		<br>
+		<label>Koristiti SAMO VELIKA slova?
+			<input type="checkbox" name="upcase" id="upcase" value="1">
+		</label>
+		<p>
+		<h2><label>Rečenica:
+			<input type=text value="klikni niže!" id=odgovor disabled>
+		</label></h2>
+		<p>
+		<input type=submit id=submit class="c_default" value="Generiraj novu rečenicu!">
+	</form>
+
+	<footer>
+		<p>Ovo je slobodan softver, predložite izmjene na mnalis-skole&#64;voyager&#46;hr (ili ih <A HREF="https://github.com/mnalis/citanje_recenica">sami napravite</A>!)</p>
+		Autori: Matija Nalis; Marin Klojber, učenik 1.c<br>
+		Suradnici: Mali izumitelji 1.c produženog boravka O.Š. Voltino
+	</footer>
+   </div>
+</body>
+</html>
