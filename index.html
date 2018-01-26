@@ -56,8 +56,8 @@ function doAsyncUpdate() {
 
 function loadImg(name) {
 	'use strict';
-	var url="images/" + name + ".jpg";
-        document.getElementById('bg_image').src = url;
+	var url="images/480_" + name + ".jpg";
+        document.getElementById('slika_img').src = url;
 }
 
 function loadImgNaslov() {
@@ -80,8 +80,7 @@ function loadImgMust() {
 
 </head>
 
-<body>
-<!-- FIXME <body onLoad="loadImgNaslov();"> -->
+<body onLoad="loadImgNaslov();">
         <div id="sadrzaj">
               <div class="tekst">
                   <h1>Čitanje rečenica</h1>
@@ -109,8 +108,7 @@ function loadImgMust() {
               </div>
 
               <div id="slika">
-                  <!-- <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" id="slika_img"> -->
-                  <img src="images/480_naslovnica1.jpg" width=480 alt="" id="slika_img">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" id="slika_img">
               </div>
         </div>
 
