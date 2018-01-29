@@ -43,5 +43,4 @@
 - skola: Formalno pismo hrvatskog slovopisa možemo koristiti samo preko Slovopisa (ŠK). Neka onda font bude Arial.
 - skola: U prilogu šaljem fotografije njihovih izuma slova (jer još nisam sve skenirala). Tijekom dana poslat ću Vam još fotografije za tri učenika.
 
-- maybe: napravi slike da su "float: right; width: 480px;" i da sve stima bez CSS @media conditionala
 - slika na mobitelu sa ekranom manjim od 480px sada sa slikama stavlja scroll; fix that !

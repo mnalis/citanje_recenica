@@ -6,30 +6,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-textarea { vertical-align: middle; }
-#odgovor { background: #0000C2; color: #FFCE7F; font-size: x-large; width: 99%; font-family: Arial,Helvetica,sans-serif; }
-#submit { font-size: x-large }
-.c_default { cursor: default; }
-.c_progress { cursor: progress; }
+	textarea { vertical-align: middle; }
+	#odgovor { background: #0000C2; color: #FFCE7F; font-size: x-large; width: 99%; font-family: Arial,Helvetica,sans-serif; }
+	#submit { font-size: x-large }
+	.c_default { cursor: default; }
+	.c_progress { cursor: progress; }
 
-#slika {
-    max-width: 480px;
-    width: 30%;
-    display: table-cell; 
-    text-align: right;
-}
+	.sadrzaj {
+		width: 100%;
+	}
 
-#slika_img {
-    width: 100%;
-    max-width: 480px;
-}
+	.tekst {
+		width: 70%;
+		float: left;
+	}
 
-.sadrzaj { display: table; width 100%; }
-.tekst {display: table-cell; vertical-align: top; }
+	#slika {
+		max-width: 480px;
+		width: 30%;
+		float: right;
+	}
 
-@media all and (max-width: 1360px) {
-  #slika, .sadrzaj, .tekst {float: none; margin-bottom: 5px; display: block; width: 100%; }
-}
+	#slika_img {
+		width: 100%;
+		max-width: 480px;
+	}
+
+	footer {
+		float: left;
+	}
+
+	@media all and (max-width: 1360px) {
+		#slika, .tekst {float: none; margin-bottom: 5px; display: block; width: 100%; }
+	}
 </style>
 
 <script>
