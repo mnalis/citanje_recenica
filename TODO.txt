@@ -43,6 +43,3 @@
 - skola: Formalno pismo hrvatskog slovopisa možemo koristiti samo preko Slovopisa (ŠK). Neka onda font bude Arial.
 - skola: U prilogu šaljem fotografije njihovih izuma slova (jer još nisam sve skenirala). Tijekom dana poslat ću Vam još fotografije za tri učenika.
 
-- ispis recenice je trenutno kao "input type=text id=odgovor disabled", ali to na
-  mobitelu zna biti usko; staviti textarea width=98% koji automatski dodaje
-  redove po potrebi
