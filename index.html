@@ -96,7 +96,11 @@ function loadImgLetter(letter) {
 		i = Math.floor(Math.random() * 2) + 1;
 	}
 
-	loadImg(letter + i);
+	if (letter) {
+		loadImg(letter + i);
+	} else {
+		loadImgNaslov();
+	}
 }
 
 function loadImgMust() {
