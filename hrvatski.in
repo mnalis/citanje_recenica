@@ -5,6 +5,9 @@ RECENICA RECENICA_UPITNA
 RECENICA_IZJAVNA IMENICA_GLAGOL OBJEKTX
 RECENICA_IZJAVNA uskoro će DANX
 
+RECENICA_IZJAVNA DOBA idem MJESTOX
+RECENICA_IZJAVNA jučer DOBA sam išla MJESTOX
+
 RECENICA_UPITNA čija IMENICA1NZ GLAGOL1 OBJEKTQ
 RECENICA_UPITNA čiji IMENICA1NM GLAGOL1 OBJEKTQ
 RECENICA_UPITNA ima li IMENICA1NZ OBJEKTQ
@@ -526,6 +529,7 @@ IMENICA1AZ vijaču
 IMENICA1AZ vodu
 IMENICA1AZ vranu
 IMENICA1AZ zvijezdu
+IMENICA1AZ abecedu
 
 
 
@@ -755,3 +759,36 @@ DAN Uskrs
 # kludge za "uskoro će"
 DAN pasti noć
 DAN svanuti
+DAN jutro
+DAN podne
+DAN prijepodne
+DAN poslijepodne
+DAN večer
+DAN noć
+
+DOBA ujutro
+DOBA u podne
+DOBA prijepodne
+DOBA poslijepodne
+DOBA navečer
+DOBA po noći
+
+MJESTO u MJESTO_U
+MJESTO na MJESTO_NA
+MJESTO spavati
+
+MJESTO_NA igralište
+MJESTO_NA mjesec
+MJESTO_NA more
+MJESTO_NA sanjkanje
+MJESTO_NA vlak
+
+MJESTO_U kazalište
+MJESTO_U kino
+MJESTO_U krevet
+MJESTO_U park
+MJESTO_U školu
+MJESTO_U šumu
+MJESTO_U trgovinu
+MJESTO_U vozilo
+MJESTO_U vrtić
