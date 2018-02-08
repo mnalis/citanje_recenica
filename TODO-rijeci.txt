@@ -1,3 +1,10 @@
+- dodati rijeci:
+  jutro, prijepodne, podne, poslijepodne, večer, noć, dan, abeceda
+  poslijepodne idem/ne idem u parkic
+  po noci jako volim spavati
+  moj tata je po noci skoro svaki put budan.
+  brojevi: jedan, dva, tri, četiri, pet, šest, sedam, osam, devet, deset
+
 - dječak je u krevetu. pas nije u krevetu
 - kocke su u košari. olovka i šiljilo nisu u košari.
 - volim crvenkapicu. ne volim vuka.
