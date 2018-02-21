@@ -73,7 +73,7 @@ my $ok_slova = qr/^[$LETTERS \.!\?]+$/i;
 
 read_db();	# initialize the DB
 
-# filter by allowed letters
+# remove words which do not use allowed letters
 for my $macro (keys %$hrv_dat) {
 	my $v = $$hrv_dat{$macro};
 	foreach my $orig_word (@$v) {
@@ -94,53 +94,42 @@ for my $macro (keys %$hrv_dat) {
 		if ($plain_words =~ /$ok_slova/ and $plain_words =~ /$MUST/) {
 			$DEBUG > 11 && say "\tok, keeping word";
 		} else {
-			$DEBUG > 10 && say "\t removing word '$orig_word' as it does not match ok_slova=$ok_slova and MUST=$MUST";
+			$DEBUG > 10 && say "\tremoving word '$orig_word' as it does not match \$ok_slova/\$MUST";
 			$orig_word = undef;
 		}
 	}
 	@$v = grep defined, @$v;	# remove all undef values
 }
 
+$DEBUG > 10 && say "\n\n--- stage 2---\n";
+
+# remove all macros which use undef/removed macros
 my $finished;
-my @remove_macros;
 do { 
 	$finished = 1;
-	@remove_macros = ();
-	for my $macro (sort { length ($b) <=> length ($a) } keys %$hrv_dat) {     # must sort; order matters, and we want to make sure that we get the longest matches first
+
+	for my $macro (keys %$hrv_dat) {
 		my $v = $$hrv_dat{$macro};
-		next if !defined $v;
-		$DEBUG > 12 && say "checking hrv_dat{$macro} for emptiness " . scalar @$v;
-		if (! scalar @$v) {
-			$DEBUG > 10 && say "\tremoving empty hrv_dat{$macro}";
-			$finished = 0;
-			$$hrv_dat{$macro} = undef;
-			push @remove_macros, $macro;
-		}
-	}
-	my $remove_regex = join '|', @remove_macros;
-	$DEBUG > 10 && say "end this cleanup round, finished=$finished (to remove: $remove_regex)";
-	
-	if ($remove_regex) {	# remove references to removed macros, if any
-		for my $macro (keys %$hrv_dat) {
-			my $v = $$hrv_dat{$macro};
-			if (! defined $v) {
-				$DEBUG > 10 && say "\tdeleting undef hrv_dat{$macro}";
-				delete $$hrv_dat{$macro};
-				$finished = 0;
-				next;
-			}
-			foreach my $orig_word (@$v) {
-				if ($orig_word =~ s/$remove_regex//g) {
-					$orig_word =~ s/^\s*//;
-					$orig_word =~ s/\s*$//;
-					$DEBUG > 11 && say "\t removed word from hrv_dat{$macro}, now: $orig_word";
+		foreach my $orig_word (@$v) {
+			my $word = $orig_word . " "; 	# make a copy, so we don't clobber the original value!
+			$DEBUG > 10 && say "2. hrv_dat{$macro}";
+			$DEBUG > 11 && say "\tpre =  $word";
+			while ($word =~ s/$hrv_RE//s ) {
+				my $preamble = $1;
+				my $rule = $2;
+				$DEBUG > 13 && say "\t\tchecking preamble=$preamble, rule=$rule";
+				if (! scalar @{$$hrv_dat{$rule}}) {
+					$DEBUG > 12 && say "\t\t\tremoving '$orig_word' as $rule is undef";
+					$orig_word = undef;
 					$finished = 0;
+					last;
 				}
 			}
-			@$v = grep !/^\s*$/, @$v;	# remove all empty, whitespace-only and undef values
+			#$DEBUG > 14 && say "\tpost = $word";
 		}
+		@$v = grep defined, @$v;	# remove all undef values
 	}
-
+	$DEBUG > 10 && say "end this cleanup round, finished=$finished";
 } until ($finished);
 
 if ($DEBUG > 7) {
