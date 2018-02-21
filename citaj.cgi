@@ -53,6 +53,8 @@ sub validate_oknull($$)
 ### here goes the main
 ###
 
+$| = 1;
+
 binmode STDOUT, ':utf8';
 binmode STDERR, ':utf8';
 
@@ -64,21 +66,54 @@ print $q->header (
 $LETTERS = validate_oknull('letters', "[$LETTERS]{0,27}") || $LETTERS;
 my $MUST = validate_oknull('must', "([$LETTERS$UPLETTERS]|[Ll][Jj]|[Nn][Jj]|[Dd][Žž])") || '';
 $ONLY_UPPERCASE = validate_oknull('upcase', '[01]') || 0;
-$DEBUG = validate_oknull('debug', '[0-9]') || 0;
+$DEBUG = validate_oknull('debug', '[0-9]*') || 0;
 $DEBUG > 1 && say "Allowed letters=$LETTERS (" . length($LETTERS) . "), must use=$MUST, upcase=$ONLY_UPPERCASE";
+
+my $ok_slova = qr/^[$LETTERS \.!\?]+$/i;
 
 read_db();	# initialize the DB
 
+# filter by allowed letters
+for my $macro (keys %$hrv_dat) {
+	my $v = $$hrv_dat{$macro};
+	foreach my $orig_word (@$v) {
+		my $word = $orig_word . " "; 	# make a copy, so we don't clobber the original value!
+		$DEBUG > 10 && say "hrv_dat{$macro}";
+		$DEBUG > 11 && say "\tpre =  $word";
+		my $plain_words = '';
+		while ($word =~ s/$hrv_RE//s ) {
+			my $preamble = $1;
+			my $rule = $2;
+			$DEBUG > 13 && say "\t\tpreamble=$preamble\n\t\trule=$rule";
+			$plain_words .= $preamble;
+		}
+		$plain_words .= $word;	# for simple words withut macro, while() above does not execute at all;
+		$DEBUG > 12 && say "\tpost = $word";
+		$DEBUG > 10 && say "\tplain_words = $plain_words";
+
+		if ($plain_words =~ /$ok_slova/ and $plain_words =~ /$MUST/) {
+			$DEBUG > 11 && say "\tok, keeping word";
+		} else {
+			$DEBUG > 10 && say "\t removing word '$orig_word' as it does not match ok_slova=$ok_slova and MUST=$MUST";
+			$orig_word = undef;
+		}
+	}
+	@$v = grep defined, @$v;	# remove all undef values
+}
+
+
 if ($DEBUG > 7) {
 	use Data::Dumper;
-	say Dumper(\$hrv_dat);
-	say Dumper(\$hrv_RE);
+	$Data::Dumper::Terse = 1;
+	say "\nok_slova = " . Dumper($ok_slova);
+	say "MUST = " . Dumper($MUST);
+	say "hrv_RE = " . Dumper($hrv_RE);
+	say "hrv_dat = " . Dumper($hrv_dat);
 }
 
 my $start_rule = "RECENICA";
 my $recenica = 'XXX_%UNDEF0%';
 my $count = 10000;
-my $ok_slova = qr/^[$LETTERS \.!\?]+$/i;
 my $found = 0;
 
 # FIXME: this is rather stupid and slow way to eliminate sentances with invalid letters, but is quickest to implement... should really modify scigen.pm one day (but watch out for non-expanded macros if there is nothing matching them!)

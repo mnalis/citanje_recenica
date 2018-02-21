@@ -1,3 +1,9 @@
+- optimized branch: 
+  fix kada je mali broj slova npr. letters=iaouem
+  onda neki macroi budu skroz prazni -- pa generator baca prazne recenice
+
+- add alarm sa timeoutom
+
 - fixme ne pronalazi nista sa:
   letters=iaouem
 
