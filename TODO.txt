@@ -1,4 +1,8 @@
-- copy/paste ne radi jer je polje disabled?! fix
+- fixme ne pronalazi nista sa:
+  letters=iaouem
+
+  a trebalo bi npr. "Ema ima mamu", "mama ima ime"
+  (vjerojatno zato jer se ne pojavi u tom 1000; fixaj da radi pametnije scigen.pm)
 
 - boje:
   crna na #66AA55 ? ili plava #0003B3 na zelenu #B7D8B1
@@ -12,12 +16,8 @@
   npr. #C5C9FC na #3C008F
   ili  #FFCE7F na #0000C2
 
-- boje zasto se ne moze vise selektirati tekst da bude inverzno ?
-
 - odabir max dužine riječi i max broja slova u riječi
 - staviti upitnik u listu slova (da se mogu izbjegavati upitne rečenice na početku)?
-- HTML JS + web2.0 async CGI calling?
-- ljepsi HTML i back button ili nesto
 
 - vise glagola - npr. "jede", "popravlja" koji imaju svoje objekte (a OBJEKT da je onda OBJEKT_HRANA ili OBJEKT_STVAR ili OBJEKT_XXX)
 

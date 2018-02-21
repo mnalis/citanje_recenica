@@ -96,6 +96,6 @@ if ($count > 0) {
 	say fix_case($recenica);
 	$DEBUG > 0 && say "(count went down to $count)";
 } else {
-	say "(Nažalost, ne mogu pronaći rečenicu koji koristi samo slova: $LETTERS (obavezna slova: $MUST))";
+	say "(Nažalost, ne mogu pronaći rečenicu koji koristi samo slova: $LETTERS" . ($MUST ? " (obavezna slova: $MUST)" : "") . ")";
 }
 
