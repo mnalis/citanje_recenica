@@ -91,10 +91,10 @@ for my $macro (keys %$hrv_dat) {
 		$DEBUG > 12 && say "\tpost = $word";
 		$DEBUG > 10 && say "\tplain_words = $plain_words";
 
-		if ($plain_words =~ /$ok_slova/ and $plain_words =~ /$MUST/) {
+		if ($plain_words =~ /$ok_slova/) {
 			$DEBUG > 11 && say "\tok, keeping word";
 		} else {
-			$DEBUG > 10 && say "\tremoving word '$orig_word' as it does not match \$ok_slova/\$MUST";
+			$DEBUG > 10 && say "\tremoving word '$orig_word' as it does not match \$ok_slova";
 			$orig_word = undef;
 		}
 	}
@@ -144,10 +144,10 @@ if ($DEBUG > 7) {
 
 my $start_rule = "RECENICA";
 my $recenica = 'XXX_%UNDEF0%';
-my $count = 10;
+my $count = 1000;
 my $found = 0;
 
-# FIXME: this is double-check only now in case scigen generated empty or unexpanded result... we should never generate sentence with disallowed chars now!
+# FIXME: this is better as we regenerate only if we do not match $MUST, but still suboptimal. But we cannot filter on database load on $MUST as we do for $ok_slova, as it is per-sentence, not per-word!
 # FIXME: also should support more than one $MUST letter
 while ($count-- > 0 and $found < 2) {
 	$found = 0;
