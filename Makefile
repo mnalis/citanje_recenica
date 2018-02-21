@@ -7,7 +7,7 @@ check: hrvatski.in
 publish: check
 	perl -wTc citaj.cgi
 	git commit -a || true
-	git push -a
+	git push --all
 
 update:
 	chown -R $(USER) .git/ *.in *.cgi *.pl
