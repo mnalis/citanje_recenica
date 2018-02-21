@@ -101,10 +101,52 @@ for my $macro (keys %$hrv_dat) {
 	@$v = grep defined, @$v;	# remove all undef values
 }
 
+my $finished;
+my @remove_macros;
+do { 
+	$finished = 1;
+	@remove_macros = ();
+	for my $macro (sort { length ($b) <=> length ($a) } keys %$hrv_dat) {     # must sort; order matters, and we want to make sure that we get the longest matches first
+		my $v = $$hrv_dat{$macro};
+		next if !defined $v;
+		$DEBUG > 12 && say "checking hrv_dat{$macro} for emptiness " . scalar @$v;
+		if (! scalar @$v) {
+			$DEBUG > 10 && say "\tremoving empty hrv_dat{$macro}";
+			$finished = 0;
+			$$hrv_dat{$macro} = undef;
+			push @remove_macros, $macro;
+		}
+	}
+	my $remove_regex = join '|', @remove_macros;
+	$DEBUG > 10 && say "end this cleanup round, finished=$finished (to remove: $remove_regex)";
+	
+	if ($remove_regex) {	# remove references to removed macros, if any
+		for my $macro (keys %$hrv_dat) {
+			my $v = $$hrv_dat{$macro};
+			if (! defined $v) {
+				$DEBUG > 10 && say "\tdeleting undef hrv_dat{$macro}";
+				delete $$hrv_dat{$macro};
+				$finished = 0;
+				next;
+			}
+			foreach my $orig_word (@$v) {
+				if ($orig_word =~ s/$remove_regex//g) {
+					$orig_word =~ s/^\s*//;
+					$orig_word =~ s/\s*$//;
+					$DEBUG > 11 && say "\t removed word from hrv_dat{$macro}, now: $orig_word";
+					$finished = 0;
+				}
+			}
+			@$v = grep !/^\s*$/, @$v;	# remove all empty, whitespace-only and undef values
+		}
+	}
+
+} until ($finished);
 
 if ($DEBUG > 7) {
 	use Data::Dumper;
 	$Data::Dumper::Terse = 1;
+	$Data::Dumper::Sortkeys = 1;
 	say "\nok_slova = " . Dumper($ok_slova);
 	say "MUST = " . Dumper($MUST);
 	say "hrv_RE = " . Dumper($hrv_RE);
