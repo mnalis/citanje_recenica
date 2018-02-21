@@ -144,10 +144,10 @@ if ($DEBUG > 7) {
 
 my $start_rule = "RECENICA";
 my $recenica = 'XXX_%UNDEF0%';
-my $count = 10000;
+my $count = 10;
 my $found = 0;
 
-# FIXME: this is rather stupid and slow way to eliminate sentances with invalid letters, but is quickest to implement... should really modify scigen.pm one day (but watch out for non-expanded macros if there is nothing matching them!)
+# FIXME: this is double-check only now in case scigen generated empty or unexpanded result... we should never generate sentence with disallowed chars now!
 # FIXME: also should support more than one $MUST letter
 while ($count-- > 0 and $found < 2) {
 	$found = 0;

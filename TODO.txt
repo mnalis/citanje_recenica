@@ -1,14 +1,4 @@
-- optimized branch: 
-  fix kada je mali broj slova npr. letters=iaouem
-  onda neki macroi budu skroz prazni -- pa generator baca prazne recenice
-
 - add alarm sa timeoutom
-
-- fixme ne pronalazi nista sa:
-  letters=iaouem
-
-  a trebalo bi npr. "Ema ima mamu", "mama ima ime"
-  (vjerojatno zato jer se ne pojavi u tom 1000; fixaj da radi pametnije scigen.pm)
 
 - boje:
   crna na #66AA55 ? ili plava #0003B3 na zelenu #B7D8B1
