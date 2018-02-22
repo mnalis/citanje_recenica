@@ -20,6 +20,7 @@ my $UPLETTERS = 'ABCĆČDĐEFGHIJKLMNOPRSŠTUVZŽ';
 
 $ENV{PATH} = '/bin:/usr/bin';
 
+alarm 10;
 
 # reads the database
 my $hrv_dat = {};

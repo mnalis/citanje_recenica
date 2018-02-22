@@ -1,5 +1,3 @@
-- add alarm sa timeoutom
-
 - boje:
   crna na #66AA55 ? ili plava #0003B3 na zelenu #B7D8B1
   1. http://www.colorhexa.com za odabir boje, vidi Deuteranomaly na dnu
