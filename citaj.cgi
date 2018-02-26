@@ -145,7 +145,7 @@ if ($DEBUG > 7) {
 
 my $start_rule = "RECENICA";
 my $recenica = 'XXX_%UNDEF0%';
-my $count = 1000;
+my $count = 50000;
 my $found = 0;
 
 # FIXME: this is better as we regenerate only if we do not match $MUST, but still suboptimal. But we cannot filter on database load on $MUST as we do for $ok_slova, as it is per-sentence, not per-word!
