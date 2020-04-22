@@ -6,7 +6,7 @@ Napravljen je zato, jer su rečenice iz knjige klinci već naučili napamet pa i
 
 Perl CGI verzija.
 
-Nudi odabir samo velikih štampanih ili normalna kombinacija velikih i malih slova.
+Nudi odabir samo velikih tiskanih ili normalnu kombinaciju velikih i malih slova.
 
 Nudi odabir dosad naučenih slova, pa generira rečenice samo koristeći njih.
 
